@@ -18,13 +18,9 @@ export default function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-5">
-              <AppLogo size={44} />
-              <div className="flex flex-col leading-tight text-white">
-                <span className="font-bold text-base tracking-widest uppercase">BORJS</span>
-                <span className="text-[10px] tracking-[0.18em] uppercase font-medium opacity-70">
-                  Hotel Suites & Spa
-                </span>
+            <div className="mb-5">
+              <div className="inline-block bg-white rounded-xl p-1">
+                <AppLogo size={96} />
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-sm mb-6">

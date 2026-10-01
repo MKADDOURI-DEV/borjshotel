@@ -1,92 +1,94 @@
 'use client';
 import React, { useState } from 'react';
 import AppImage from '@/components/ui/AppImage';
-import { BedDouble, Maximize2, Users, Wifi, Wind, Tv, Lock, Coffee, Phone, Bath, ChevronLeft, ChevronRight } from 'lucide-react';
+import { BedDouble, Users, Wifi, Wind, Tv, Lock, Coffee, Phone, Bath, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // BACKEND INTEGRATION: Replace BOOKING_ENGINE_URL with actual booking engine URL from admin settings
 const BOOKING_ENGINE_URL = 'https://booking.borjshotelagadir.com';
 
+const baseAmenities = [
+  { key: 'wifi', icon: Wifi, label: 'Wi-Fi gratuit' },
+  { key: 'ac', icon: Wind, label: 'Climatisation' },
+  { key: 'tv', icon: Tv, label: 'TV satellite' },
+  { key: 'safe', icon: Lock, label: 'Coffre-fort' },
+  { key: 'minibar', icon: Coffee, label: 'Minibar' },
+  { key: 'phone', icon: Phone, label: 'Room service' },
+  { key: 'bath', icon: Bath, label: 'Salle de bain privée' },
+  { key: 'bed', icon: BedDouble, label: 'Single ou double' }];
+
 const rooms = [
 {
-  id: 'room-standard-double',
-  type: 'Chambre Standard Double',
+  id: 'chambre-classique',
+  type: 'Chambre Classique',
   badge: null,
-  size: '28 m²',
-  terrace: '4 m²',
-  occupancy: '2 personnes',
-  bed: '1 lit King-size',
-  floor: 'Rez-de-chaussée ou étage',
-  view: 'Piscine, jardin ou points d\'intérêt',
-  description: 'Chambre confortable et soigneusement aménagée d\'environ 28 m², avec terrasse privée de 4 m². Un espace chaleureux alliant décoration marocaine et équipements modernes pour un séjour reposant à Agadir.',
-  images: [
-  { id: 'std-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1d4e5bfcf-1773145657003.png", alt: 'Chambre standard avec lit king-size, décoration marocaine et terrasse privée' },
-  { id: 'std-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1c818d8e8-1770803352139.png", alt: 'Salle de bain moderne de la chambre standard avec douche et finitions élégantes' },
-  { id: 'std-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1d4e5bfcf-1773145657003.png", alt: 'Terrasse privée de la chambre standard avec vue sur le jardin de l\'hôtel' }],
-
-  amenities: [
-  { key: 'wifi', icon: Wifi, label: 'Wi-Fi gratuit' },
-  { key: 'ac', icon: Wind, label: 'Climatisation' },
-  { key: 'tv', icon: Tv, label: 'TV satellite' },
-  { key: 'safe', icon: Lock, label: 'Coffre-fort' },
-  { key: 'minibar', icon: Coffee, label: 'Minibar' },
-  { key: 'phone', icon: Phone, label: 'Room service' },
-  { key: 'bath', icon: Bath, label: 'Salle de bain privée' },
-  { key: 'bed', icon: BedDouble, label: 'Lit King-size' }]
-
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  view: 'Selon disponibilité',
+  description: 'Chambre confortable et soigneusement aménagée, alliant décoration marocaine et équipements modernes pour un séjour reposant à Agadir. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'cls-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1d4e5bfcf-1773145657003.png", alt: 'Chambre classique avec décoration marocaine' },
+  { id: 'cls-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1c818d8e8-1770803352139.png", alt: 'Salle de bain moderne avec douche et finitions élégantes' }],
+  amenities: baseAmenities
 },
 {
-  id: 'room-double-seaview',
-  type: 'Double Vue Mer',
-  badge: 'Vue Mer',
-  size: '28 m²',
-  terrace: '4 m²',
-  occupancy: '2 personnes',
-  bed: '1 lit double',
-  floor: 'Étage supérieur',
-  view: 'Vue panoramique sur la mer',
-  description: 'Chambre avec vue imprenable sur la mer d\'Agadir. Profitez du spectacle de l\'Atlantique depuis votre balcon privé. Même superficie que la chambre standard, avec en prime un panorama exceptionnel sur la côte marocaine.',
-  images: [
-  { id: 'sea-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1b7d14cf0-1779635909875.png", alt: 'Chambre double vue mer avec balcon et panorama sur l\'océan Atlantique depuis Agadir' },
-  { id: 'sea-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_16df72331-1779106167904.png", alt: 'Salle de bain élégante de la chambre vue mer avec baignoire et finitions modernes' },
-  { id: 'sea-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_10c7d42df-1773022300138.png", alt: 'Vue panoramique sur la mer depuis le balcon de la chambre double vue mer' }],
-
-  amenities: [
-  { key: 'wifi', icon: Wifi, label: 'Wi-Fi gratuit' },
-  { key: 'ac', icon: Wind, label: 'Climatisation' },
-  { key: 'tv', icon: Tv, label: 'TV satellite' },
-  { key: 'safe', icon: Lock, label: 'Coffre-fort' },
-  { key: 'minibar', icon: Coffee, label: 'Minibar' },
-  { key: 'phone', icon: Phone, label: 'Room service' },
-  { key: 'bath', icon: Bath, label: 'Salle de bain privée' },
-  { key: 'bed', icon: BedDouble, label: 'Lit double' }]
-
+  id: 'chambre-luxe-vue-piscine',
+  type: 'Chambre de Luxe',
+  badge: 'Vue piscine',
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  view: 'Vue sur la piscine',
+  description: 'Chambre de luxe avec vue sur la piscine de l\'hôtel, pour un séjour plus raffiné au calme. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'lux-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1d4e5bfcf-1773145657003.png", alt: 'Chambre de luxe avec vue sur la piscine' },
+  { id: 'lux-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1c818d8e8-1770803352139.png", alt: 'Salle de bain moderne avec douche et finitions élégantes' }],
+  amenities: baseAmenities
 },
 {
-  id: 'room-suite',
-  type: 'Suite Supérieure',
+  id: 'suite-junior',
+  type: 'Suite Junior',
   badge: 'Suite',
-  size: '58 m²',
-  terrace: '11 m²',
-  occupancy: '4 personnes',
-  bed: '1 lit King + 2 canapés-lits',
-  floor: 'Étage supérieur',
-  view: 'Jardin ou piscine',
-  description: 'Notre Suite Supérieure de 58 m² offre un espace de vie généreux avec salon séparé, cuisine moderne équipée et terrasse de 11 m². Idéale pour les familles ou les voyageurs souhaitant plus d\'espace et de confort premium.',
-  images: [
-  { id: 'suite-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1dce45a39-1776113140890.png", alt: 'Suite luxueuse avec salon séparé, décoration marocaine et vue sur la piscine' },
-  { id: 'suite-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_13b793222-1785153798426.png", alt: 'Chambre de la suite avec lit king-size et finitions haut de gamme' },
-  { id: 'suite-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1239373c7-1772249595914.png", alt: 'Grande terrasse de la suite avec vue sur le jardin et la piscine de l\'hôtel' }],
-
-  amenities: [
-  { key: 'wifi', icon: Wifi, label: 'Wi-Fi gratuit' },
-  { key: 'ac', icon: Wind, label: 'Climatisation' },
-  { key: 'tv', icon: Tv, label: 'TV satellite' },
-  { key: 'safe', icon: Lock, label: 'Coffre-fort' },
-  { key: 'minibar', icon: Coffee, label: 'Minibar' },
-  { key: 'phone', icon: Phone, label: 'Room service' },
-  { key: 'bath', icon: Bath, label: 'Salle de bain + baignoire' },
-  { key: 'bed', icon: BedDouble, label: 'King + canapés-lits' }]
-
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  view: 'Selon disponibilité',
+  description: 'Suite Junior offrant plus d\'espace et de confort pour un séjour en toute sérénité. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'jun-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1dce45a39-1776113140890.png", alt: 'Suite Junior avec décoration marocaine' },
+  { id: 'jun-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_13b793222-1785153798426.png", alt: 'Chambre de la suite avec finitions haut de gamme' },
+  { id: 'jun-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1239373c7-1772249595914.png", alt: 'Terrasse de la suite avec vue sur le jardin et la piscine de l\'hôtel' }],
+  amenities: baseAmenities
+},
+{
+  id: 'suite-senior',
+  type: 'Suite Senior',
+  badge: 'Suite',
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  view: 'Selon disponibilité',
+  description: 'Suite Senior spacieuse, pensée pour les voyageurs qui recherchent un confort supérieur. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'sen-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1dce45a39-1776113140890.png", alt: 'Suite Senior avec décoration marocaine' },
+  { id: 'sen-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_13b793222-1785153798426.png", alt: 'Chambre de la suite avec finitions haut de gamme' },
+  { id: 'sen-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1239373c7-1772249595914.png", alt: 'Terrasse de la suite avec vue sur le jardin et la piscine de l\'hôtel' }],
+  amenities: baseAmenities
+},
+{
+  id: 'suite-prestige-vue-piscine',
+  type: 'Suite Prestige',
+  badge: 'Vue piscine',
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  view: 'Vue sur la piscine',
+  description: 'Notre Suite Prestige avec vue sur la piscine, la catégorie la plus haut de gamme de l\'hôtel. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'pre-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1dce45a39-1776113140890.png", alt: 'Suite Prestige avec vue sur la piscine' },
+  { id: 'pre-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_13b793222-1785153798426.png", alt: 'Chambre de la suite avec finitions haut de gamme' },
+  { id: 'pre-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1239373c7-1772249595914.png", alt: 'Terrasse de la suite avec vue sur le jardin et la piscine de l\'hôtel' }],
+  amenities: baseAmenities
 }];
 
 
@@ -148,7 +150,7 @@ export default function RoomsList() {
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-3">Nos hébergements</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Choisissez votre chambre</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Toutes nos chambres disposent d&apos;une terrasse ou d&apos;un balcon privé, de la climatisation et d&apos;équipements modernes.
+            Du confort d&apos;une chambre classique à l&apos;élégance de la Suite Prestige, chaque catégorie est disponible en occupation single ou double.
           </p>
         </div>
 
@@ -175,14 +177,6 @@ export default function RoomsList() {
 
                   {/* Specs row */}
                   <div className="flex flex-wrap gap-4 mb-5">
-                    <div className="flex items-center gap-1.5 text-muted-foreground text-sm">
-                      <Maximize2 size={14} className="text-accent" />
-                      <span>{room.size}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5 text-muted-foreground text-sm">
-                      <span className="text-accent text-xs">⬛</span>
-                      <span>Terrasse {room.terrace}</span>
-                    </div>
                     <div className="flex items-center gap-1.5 text-muted-foreground text-sm">
                       <Users size={14} className="text-accent" />
                       <span>{room.occupancy}</span>

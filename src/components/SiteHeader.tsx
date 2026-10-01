@@ -57,13 +57,9 @@ export default function SiteHeader({ currentLang = 'fr', onLangChange }: SiteHea
         <div className="max-w-screen-2xl mx-auto px-6 lg:px-8 xl:px-10">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-              <AppLogo size={40} />
-              <div className={`flex flex-col leading-tight ${isScrolled ? '' : 'text-white'}`}>
-                <span className="font-bold text-base tracking-widest uppercase">BORJS</span>
-                <span className="text-[10px] tracking-[0.18em] uppercase font-medium opacity-80">
-                  Hotel Suites & Spa
-                </span>
+            <Link href="/" className="flex items-center flex-shrink-0" aria-label="Borjs Hotel Suites & Spa — Accueil">
+              <div className="bg-white rounded-lg shadow-sm p-0.5">
+                <AppLogo size={64} />
               </div>
             </Link>
 

@@ -1,44 +1,63 @@
 import React from 'react';
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
-import { BedDouble, Maximize2, Users, ArrowRight } from 'lucide-react';
+import { BedDouble, Users, ArrowRight } from 'lucide-react';
 
 const rooms = [
 {
-  id: 'room-standard',
-  type: 'Chambre Standard',
-  subtitle: 'Double Standard',
-  size: '28 m²',
-  occupancy: '2 personnes',
-  bed: '1 lit King-size',
-  description: 'Chambre confortable avec terrasse privée d\'environ 4 m², climatisation, TV satellite et salle de bain moderne.',
+  id: 'chambre-classique',
+  type: 'Chambre Classique',
+  subtitle: 'Chambre',
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  description: 'Chambre confortable alliant décoration marocaine et équipements modernes.',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ab7bb580-1772211526418.png",
-  alt: 'Chambre standard élégante avec lit king-size, décoration marocaine et terrasse privée',
+  alt: 'Chambre classique élégante avec décoration marocaine',
   badge: null
 },
 {
-  id: 'room-seaview',
-  type: 'Double Vue Mer',
-  subtitle: 'Vue sur la mer',
-  size: '28 m²',
-  occupancy: '2 personnes',
-  bed: '1 lit double',
-  description: 'Chambre avec vue panoramique sur la mer, balcon privé et finitions soignées pour un séjour mémorable.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1b7d14cf0-1779635909875.png",
-  alt: 'Chambre vue mer avec balcon, vue panoramique sur l\'océan Atlantique depuis Agadir',
-  badge: 'Vue Mer'
+  id: 'chambre-luxe',
+  type: 'Chambre de Luxe',
+  subtitle: 'Vue piscine',
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  description: 'Chambre de luxe avec vue sur la piscine de l\'hôtel.',
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ab7bb580-1772211526418.png",
+  alt: 'Chambre de luxe avec vue sur la piscine',
+  badge: 'Vue piscine'
 },
 {
-  id: 'room-suite',
-  type: 'Suite',
-  subtitle: 'Suite Supérieure',
-  size: '58 m²',
-  occupancy: '4 personnes',
-  bed: '1 lit King + 2 canapés-lits',
-  description: 'Suite luxueuse de 58 m² avec terrasse de 11 m², espace salon séparé, cuisine moderne et vue sur jardin ou piscine.',
+  id: 'suite-junior',
+  type: 'Suite Junior',
+  subtitle: 'Suite',
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  description: 'Plus d\'espace et de confort pour un séjour en toute sérénité.',
   image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a9bd7968-1773141707263.png",
-  alt: 'Suite luxueuse avec salon séparé, terrasse privée et vue sur la piscine de l\'hôtel Borjs',
+  alt: 'Suite Junior luxueuse avec décoration marocaine',
   badge: 'Suite'
+},
+{
+  id: 'suite-senior',
+  type: 'Suite Senior',
+  subtitle: 'Suite',
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  description: 'Suite spacieuse pour un confort supérieur.',
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a9bd7968-1773141707263.png",
+  alt: 'Suite Senior spacieuse avec décoration marocaine',
+  badge: 'Suite'
+},
+{
+  id: 'suite-prestige',
+  type: 'Suite Prestige',
+  subtitle: 'Vue piscine',
+  occupancy: '1 à 2 personnes',
+  bed: 'Single ou double',
+  description: 'Notre catégorie la plus haut de gamme, avec vue sur la piscine.',
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a9bd7968-1773141707263.png",
+  alt: 'Suite Prestige avec vue sur la piscine',
+  badge: 'Prestige'
 }];
 
 
@@ -84,10 +103,6 @@ export default function RoomsPreview() {
 
                 {/* Specs */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="flex items-center gap-1.5 text-muted-foreground text-sm">
-                    <Maximize2 size={13} />
-                    <span>{room?.size}</span>
-                  </div>
                   <div className="flex items-center gap-1.5 text-muted-foreground text-sm">
                     <Users size={13} />
                     <span>{room?.occupancy}</span>
