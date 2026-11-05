@@ -4,12 +4,26 @@ import AppImage from '@/components/ui/AppImage';
 import { X } from 'lucide-react';
 
 const spaImages = [
-{ id: 'spa-g-1', src: "/assets/images/spa/dsc1384.jpg", alt: 'Hammam traditionnel marocain avec vapeur, carrelage zellige et ambiance zen', tall: true },
-{ id: 'spa-g-2', src: "/assets/images/spa/dsc1386.jpg", alt: 'Espace hammam avec vasque en zellige', tall: false },
-{ id: 'spa-g-3', src: "/assets/images/spa/dsc1399.jpg", alt: 'Table de massage avec huiles essentielles et décoration marocaine', tall: false },
-{ id: 'spa-g-4', src: "/assets/images/spa/dsc1404.jpg", alt: 'Salle de massage double avec niches en tadelakt', tall: true },
-{ id: 'spa-g-5', src: "/assets/images/spa/dsc1392.jpg", alt: 'Soins et produits naturels du hammam', tall: false },
-{ id: 'spa-g-6', src: "/assets/images/spa/dsc1395.jpg", alt: 'Sauna en bois', tall: false }];
+{ id: 'spa-g-1', src: "/assets/images/spa/dsc1384.jpg", alt: 'Hammam traditionnel avec banquette et fenêtre en arche', tall: true },
+{ id: 'spa-g-2', src: "/assets/images/spa/dsc1399.jpg", alt: 'Cabine de massage avec lumière tamisée et niches', tall: false },
+{ id: 'spa-g-3', src: "/assets/images/spa/dsc1408.jpg", alt: 'Entrée du hammam', tall: false },
+{ id: 'spa-g-4', src: "/assets/images/spa/dsc1386.jpg", alt: 'Vasque du hammam en zellige', tall: false },
+{ id: 'spa-g-5', src: "/assets/images/spa/dsc1404.jpg", alt: 'Salle de massage double avec niches en tadelakt', tall: true },
+{ id: 'spa-g-6', src: "/assets/images/spa/dsc1395.jpg", alt: 'Sauna en bois', tall: false },
+{ id: 'spa-g-7', src: "/assets/images/spa/dsc1385.jpg", alt: 'Salle de hammam avec accès en arche', tall: false },
+{ id: 'spa-g-8', src: "/assets/images/spa/dsc1410.jpg", alt: 'Entrée du sauna', tall: false },
+{ id: 'spa-g-9', src: "/assets/images/spa/dsc1392.jpg", alt: 'Plateau de soins et produits naturels du hammam', tall: false },
+{ id: 'spa-g-10', src: "/assets/images/spa/dsc1400.jpg", alt: 'Cabine de massage avec plafond en bois', tall: true },
+{ id: 'spa-g-11', src: "/assets/images/spa/dsc1409.jpg", alt: 'Entrée des salles de massage', tall: false },
+{ id: 'spa-g-12', src: "/assets/images/spa/dsc1394.jpg", alt: 'Banquette du hammam et fenêtre', tall: false },
+{ id: 'spa-g-13', src: "/assets/images/spa/dsc1401.jpg", alt: 'Serviette et pierres chaudes pour le massage', tall: false },
+{ id: 'spa-g-14', src: "/assets/images/spa/dsc1402.jpg", alt: 'Cabine de massage éclairée aux bougies', tall: false },
+{ id: 'spa-g-15', src: "/assets/images/spa/dsc1398.jpg", alt: 'Intérieur du sauna en bois', tall: true },
+{ id: 'spa-g-16', src: "/assets/images/spa/dsc1403.jpg", alt: 'Table de massage et couloir en arche', tall: false },
+{ id: 'spa-g-17', src: "/assets/images/spa/dsc1406.jpg", alt: 'Cabine de massage avec niches et bougies', tall: false },
+{ id: 'spa-g-18', src: "/assets/images/spa/dsc1407.jpg", alt: 'Bougies dans une niche du spa', tall: false },
+{ id: 'spa-g-19', src: "/assets/images/spa/dsc1411.jpg", alt: 'Étagères de serviettes du spa', tall: false },
+{ id: 'spa-g-20', src: "/assets/images/spa/dsc1414.jpg", alt: 'Couloir du spa avec serviettes', tall: true }];
 
 
 export default function SpaGallery() {
