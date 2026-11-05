@@ -18,7 +18,7 @@ const baseAmenities = [
 const rooms = [
 {
   id: 'chambre-classique',
-  type: 'Chambre Classique en DP',
+  type: 'Chambre Classique',
   badge: null,
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -32,7 +32,7 @@ const rooms = [
 },
 {
   id: 'chambre-luxe-vue-piscine',
-  type: 'Chambre de Luxe en DP',
+  type: 'Chambre de Luxe',
   badge: 'Vue piscine',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -46,7 +46,7 @@ const rooms = [
 },
 {
   id: 'suite-junior',
-  type: 'Suite Junior DP',
+  type: 'Suite Junior',
   badge: 'Suite',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -64,7 +64,7 @@ const rooms = [
 },
 {
   id: 'suite-senior',
-  type: 'Suite Senior DP',
+  type: 'Suite Senior',
   badge: 'Suite',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -86,7 +86,7 @@ const rooms = [
 },
 {
   id: 'suite-prestige-vue-piscine',
-  type: 'Suite Prestige DP',
+  type: 'Suite Prestige',
   badge: 'Vue piscine',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',

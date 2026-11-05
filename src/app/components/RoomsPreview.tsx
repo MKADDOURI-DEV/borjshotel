@@ -7,7 +7,7 @@ import { BedDouble, Users, ArrowRight } from 'lucide-react';
 const rooms = [
 {
   id: 'chambre-classique',
-  type: 'Chambre Classique en DP',
+  type: 'Chambre Classique',
   subtitle: 'Chambre',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -18,7 +18,7 @@ const rooms = [
 },
 {
   id: 'chambre-luxe',
-  type: 'Chambre de Luxe en DP',
+  type: 'Chambre de Luxe',
   subtitle: 'Vue piscine',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -29,7 +29,7 @@ const rooms = [
 },
 {
   id: 'suite-junior',
-  type: 'Suite Junior DP',
+  type: 'Suite Junior',
   subtitle: 'Suite',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -40,7 +40,7 @@ const rooms = [
 },
 {
   id: 'suite-senior',
-  type: 'Suite Senior DP',
+  type: 'Suite Senior',
   subtitle: 'Suite',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -51,7 +51,7 @@ const rooms = [
 },
 {
   id: 'suite-prestige',
-  type: 'Suite Prestige DP',
+  type: 'Suite Prestige',
   subtitle: 'Vue piscine',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
