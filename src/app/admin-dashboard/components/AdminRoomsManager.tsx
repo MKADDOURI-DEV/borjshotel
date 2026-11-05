@@ -5,11 +5,11 @@ import { useForm } from 'react-hook-form';
 
 // BACKEND INTEGRATION: Replace with real rooms data from hotel management API
 const initialRooms = [
-  { id: 'admin-room-001', name: 'Chambre Standard Double', type: 'Standard', size: '28 m²', occupancy: 2, status: 'Disponible', floor: '1er étage', view: 'Jardin' },
-  { id: 'admin-room-002', name: 'Double Vue Mer', type: 'Vue Mer', size: '28 m²', occupancy: 2, status: 'Occupée', floor: '3ème étage', view: 'Mer' },
-  { id: 'admin-room-003', name: 'Suite Supérieure', type: 'Suite', size: '58 m²', occupancy: 4, status: 'Disponible', floor: '4ème étage', view: 'Piscine' },
-  { id: 'admin-room-004', name: 'Chambre Standard Double', type: 'Standard', size: '28 m²', occupancy: 2, status: 'Maintenance', floor: '2ème étage', view: 'Cour' },
-  { id: 'admin-room-005', name: 'Suite Supérieure', type: 'Suite', size: '58 m²', occupancy: 4, status: 'Occupée', floor: '4ème étage', view: 'Jardin' },
+  { id: 'admin-room-001', name: 'Chambre Classique', type: 'Classique', size: '', occupancy: 2, status: 'Disponible', floor: '', view: 'Selon disponibilité' },
+  { id: 'admin-room-002', name: 'Chambre de Luxe', type: 'Luxe', size: '', occupancy: 2, status: 'Disponible', floor: '', view: 'Piscine' },
+  { id: 'admin-room-003', name: 'Suite Junior', type: 'Suite', size: '', occupancy: 2, status: 'Disponible', floor: '', view: 'Selon disponibilité' },
+  { id: 'admin-room-004', name: 'Suite Senior', type: 'Suite', size: '', occupancy: 2, status: 'Disponible', floor: '', view: 'Selon disponibilité' },
+  { id: 'admin-room-005', name: 'Suite Prestige', type: 'Prestige', size: '', occupancy: 2, status: 'Disponible', floor: '', view: 'Piscine' },
 ];
 
 const statusConfig: Record<string, string> = {

@@ -9,7 +9,7 @@ export default function BookingBar() {
   const [checkout, setCheckout] = useState('');
   const [adults, setAdults] = useState('2');
   const [children, setChildren] = useState('0');
-  const [room, setRoom] = useState('standard');
+  const [room, setRoom] = useState('classique');
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -110,9 +110,11 @@ export default function BookingBar() {
               className="w-full px-3 py-2.5 rounded-lg border border-input bg-background text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring appearance-none text-foreground"
               aria-label="Type de chambre"
             >
-              <option value="standard">Standard Double</option>
-              <option value="seaview">Double Vue Mer</option>
-              <option value="suite">Suite</option>
+              <option value="classique">Chambre Classique</option>
+              <option value="luxe">Chambre de Luxe (vue piscine)</option>
+              <option value="junior">Suite Junior</option>
+              <option value="senior">Suite Senior</option>
+              <option value="prestige">Suite Prestige (vue piscine)</option>
             </select>
             <ChevronDown size={12} className="absolute right-2 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
           </div>
