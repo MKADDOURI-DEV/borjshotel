@@ -7,18 +7,10 @@ import { BOOKING_URL } from '@/lib/config';
 export default function BookingBar() {
   const [checkin, setCheckin] = useState('');
   const [checkout, setCheckout] = useState('');
-  const [adults, setAdults] = useState('1');
+  const [adults, setAdults] = useState('2');
   const [children, setChildren] = useState('0');
-  const [room, setRoom] = useState('classique-single');
   const [childAges, setChildAges] = useState<string[]>([]);
   const today = new Date().toISOString().split('T')[0];
-  const maxAdults = room.endsWith('-single') ? 1 : 2;
-
-  const handleRoomChange = (value: string) => {
-    setRoom(value);
-    setAdults(value.endsWith('-single') ? '1' : '2');
-  };
-
   const handleChildrenChange = (value: string) => {
     setChildren(value);
     setChildAges((prev) => Array.from({ length: Number(value) }, (_, i) => prev[i] ?? ''));
@@ -26,7 +18,7 @@ export default function BookingBar() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    const params = new URLSearchParams({ checkin, checkout, adults, children, room });
+    const params = new URLSearchParams({ checkin, checkout, adults, children });
     childAges.forEach((age, i) => params.set(`child${i + 1}_age`, age));
     // Les paramètres sont placés avant le hash (#) du moteur Nozoul
     const [base, hash] = BOOKING_URL.split('#');
@@ -38,7 +30,7 @@ export default function BookingBar() {
       onSubmit={handleSearch}
       className="bg-card/95 backdrop-blur-md rounded-xl shadow-luxury border border-border p-4 lg:p-3"
     >
-      <div className="grid grid-cols-2 lg:grid-cols-6 gap-3 items-end">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 items-end">
         {/* Check-in */}
         <div className="col-span-1">
           <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5">
@@ -93,7 +85,7 @@ export default function BookingBar() {
               className="w-full pl-8 pr-6 py-2.5 rounded-lg border border-input bg-background text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring appearance-none text-foreground"
               aria-label="Nombre d'adultes"
             >
-              {['1','2'].filter((n) => Number(n) <= maxAdults && (maxAdults === 1 || n === '2')).map((n) => (
+              {['1','2','3','4','5','6'].map((n) => (
                 <option key={`adults-${n}`} value={n}>{n}</option>
               ))}
             </select>
@@ -122,46 +114,9 @@ export default function BookingBar() {
           </div>
         </div>
 
-        {/* Room type */}
-        <div className="col-span-1">
-          <label className="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5">
-            Chambre
-          </label>
-          <div className="relative">
-            <select
-              value={room}
-              onChange={(e) => handleRoomChange(e.target.value)}
-              className="w-full px-3 py-2.5 rounded-lg border border-input bg-background text-sm font-medium focus:outline-none focus:ring-2 focus:ring-ring appearance-none text-foreground"
-              aria-label="Type de chambre"
-            >
-              <optgroup label="Chambre Classique en DP">
-                <option value="classique-single">Chambre Classique en DP – Single (1 pers.)</option>
-                <option value="classique-double">Chambre Classique en DP – Double (2 pers.)</option>
-              </optgroup>
-              <optgroup label="Chambre de Luxe en DP – Vue piscine">
-                <option value="luxe-single">Chambre de Luxe en DP – Vue piscine – Single (1 pers.)</option>
-                <option value="luxe-double">Chambre de Luxe en DP – Vue piscine – Double (2 pers.)</option>
-              </optgroup>
-              <optgroup label="Suite Junior DP">
-                <option value="junior-single">Suite Junior DP – Single (1 pers.)</option>
-                <option value="junior-double">Suite Junior DP – Double (2 pers.)</option>
-              </optgroup>
-              <optgroup label="Suite Senior DP">
-                <option value="senior-single">Suite Senior DP – Single (1 pers.)</option>
-                <option value="senior-double">Suite Senior DP – Double (2 pers.)</option>
-              </optgroup>
-              <optgroup label="Suite Prestige DP – Vue piscine">
-                <option value="prestige-single">Suite Prestige DP – Vue piscine – Single (1 pers.)</option>
-                <option value="prestige-double">Suite Prestige DP – Vue piscine – Double (2 pers.)</option>
-              </optgroup>
-            </select>
-            <ChevronDown size={12} className="absolute right-2 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
-          </div>
-        </div>
-
         {/* Âges des enfants */}
         {childAges.length > 0 && (
-          <div className="col-span-2 lg:col-span-6">
+          <div className="col-span-2 lg:col-span-5">
             <p className="block text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5">
               Âge des enfants (à la date du séjour)
             </p>
