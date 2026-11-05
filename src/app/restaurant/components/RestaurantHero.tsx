@@ -5,7 +5,7 @@ export default function RestaurantHero() {
   return (
     <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
       <AppImage
-        src="https://img.rocket.new/generatedImages/rocket_gen_img_4561b5712-1789113488132.png"
+        src="/assets/images/restaurant/dsc1473.jpg"
         alt="Restaurant élégant de l'hôtel Borjs avec tables dressées, décoration marocaine et ambiance chaleureuse"
         fill
         priority

@@ -12,7 +12,7 @@ const venues = [
   description: 'Notre restaurant principal vous accueille dans un cadre élégant et chaleureux pour déguster une cuisine raffinée mêlant saveurs marocaines authentiques et influences méditerranéennes. Des ingrédients locaux frais sélectionnés chaque jour pour votre plaisir.',
   cuisines: ['Marocaine', 'Méditerranéenne', 'Internationale', 'Poissons & Fruits de mer'],
   meals: ['Déjeuner', 'Dîner'],
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_4561b5712-1789113488132.png",
+  image: "/assets/images/restaurant/dsc1473.jpg",
   alt: 'Restaurant principal de l\'hôtel Borjs avec décoration marocaine, tables dressées et ambiance chaleureuse',
   location: 'Rez-de-chaussée'
 },
@@ -24,7 +24,7 @@ const venues = [
   description: 'Commencez votre journée agadirienne avec notre buffet petit-déjeuner généreux. Viennoiseries fraîches, fruits de saison, jus pressés, fromages locaux, œufs préparés à votre convenance et spécialités marocaines traditionnelles.',
   cuisines: ['Buffet continental', 'Spécialités marocaines', 'Produits frais locaux'],
   meals: ['Petit-déjeuner'],
-  image: "https://images.unsplash.com/photo-1646469399210-0ec11648444c",
+  image: "/assets/images/restaurant/dsc1475.jpg",
   alt: 'Buffet petit-déjeuner généreux avec viennoiseries fraîches, fruits et spécialités marocaines',
   location: 'Rez-de-chaussée'
 },
@@ -36,7 +36,7 @@ const venues = [
   description: 'Culminez votre journée au Rooftop Bar avec une vue à couper le souffle sur la baie d\'Agadir et le coucher de soleil atlantique. Cocktails créatifs, vins sélectionnés et petites bouchées légères dans une atmosphère lounge unique.',
   cuisines: ['Cocktails', 'Vins & Boissons', 'Bouchées légères', 'Snacks'],
   meals: ['Déjeuner léger', 'Apéritif', 'Soirée'],
-  image: "https://images.unsplash.com/photo-1706893763563-6213f131cef2",
+  image: "/assets/images/pool/dsc1509.jpg",
   alt: 'Rooftop bar avec vue panoramique sur la baie d\'Agadir au coucher du soleil',
   location: 'Rooftop'
 }];

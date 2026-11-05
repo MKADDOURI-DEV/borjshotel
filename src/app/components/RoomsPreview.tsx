@@ -1,4 +1,5 @@
 import React from 'react';
+import { BOOKING_URL } from '@/lib/config';
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
 import { BedDouble, Users, ArrowRight } from 'lucide-react';
@@ -11,7 +12,7 @@ const rooms = [
   occupancy: '1 à 2 personnes',
   bed: 'Single ou double',
   description: 'Chambre confortable alliant décoration marocaine et équipements modernes.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ab7bb580-1772211526418.png",
+  image: "/assets/images/rooms/dsc1460.jpg",
   alt: 'Chambre classique élégante avec décoration marocaine',
   badge: null
 },
@@ -22,7 +23,7 @@ const rooms = [
   occupancy: '1 à 2 personnes',
   bed: 'Single ou double',
   description: 'Chambre de luxe avec vue sur la piscine de l\'hôtel.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ab7bb580-1772211526418.png",
+  image: "/assets/images/rooms/dsc1467.jpg",
   alt: 'Chambre de luxe avec vue sur la piscine',
   badge: 'Vue piscine'
 },
@@ -33,7 +34,7 @@ const rooms = [
   occupancy: '1 à 2 personnes',
   bed: 'Single ou double',
   description: 'Plus d\'espace et de confort pour un séjour en toute sérénité.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a9bd7968-1773141707263.png",
+  image: "/assets/images/rooms/dsc1447.jpg",
   alt: 'Suite Junior luxueuse avec décoration marocaine',
   badge: 'Suite'
 },
@@ -44,7 +45,7 @@ const rooms = [
   occupancy: '1 à 2 personnes',
   bed: 'Single ou double',
   description: 'Suite spacieuse pour un confort supérieur.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a9bd7968-1773141707263.png",
+  image: "/assets/images/rooms/dsc1437.jpg",
   alt: 'Suite Senior spacieuse avec décoration marocaine',
   badge: 'Suite'
 },
@@ -55,7 +56,7 @@ const rooms = [
   occupancy: '1 à 2 personnes',
   bed: 'Single ou double',
   description: 'Notre catégorie la plus haut de gamme, avec vue sur la piscine.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1a9bd7968-1773141707263.png",
+  image: "/assets/images/rooms/dsc1422.jpg",
   alt: 'Suite Prestige avec vue sur la piscine',
   badge: 'Prestige'
 }];
@@ -116,12 +117,13 @@ export default function RoomsPreview() {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">{room?.description}</p>
 
                 <div className="flex gap-3">
-                  <Link
-                  href="/chambres-suites"
+                  <a
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 btn-primary justify-center text-sm py-2.5">
-                  
                     Réserver
-                  </Link>
+                  </a>
                   <Link
                   href="/chambres-suites"
                   className="flex items-center gap-1.5 px-4 py-2.5 rounded-lg border border-border text-foreground text-sm font-medium hover:bg-secondary transition-colors">

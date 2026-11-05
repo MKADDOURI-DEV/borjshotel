@@ -1,4 +1,5 @@
 import React from 'react';
+import { BOOKING_URL } from '@/lib/config';
 import BookingBar from '@/components/BookingBar';
 import { ChevronDown, Star } from 'lucide-react';
 import Link from 'next/link';
@@ -42,9 +43,9 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="btn-primary text-base py-3.5 px-8">
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-primary text-base py-3.5 px-8">
               Réserver maintenant
-            </button>
+            </a>
             <Link href="/chambres-suites" className="btn-outline text-base py-3.5 px-8">
               Découvrir l&apos;hôtel
             </Link>

@@ -6,7 +6,7 @@ export default function RestaurantCTA() {
   return (
     <section className="relative h-[380px] overflow-hidden">
       <AppImage
-        src="https://img.rocket.new/generatedImages/rocket_gen_img_4d9c7a00d-1790785056692.png"
+        src="/assets/images/restaurant/dsc1476.jpg"
         alt="Cocktails colorés et ambiance lounge au rooftop bar de l'hôtel Borjs avec vue sur Agadir"
         fill
         sizes="100vw"

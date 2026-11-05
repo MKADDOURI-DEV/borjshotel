@@ -2,8 +2,7 @@
 import React, { useState } from 'react';
 import { Calendar, Users, ChevronDown, Search } from 'lucide-react';
 
-// BACKEND INTEGRATION: Replace BOOKING_ENGINE_URL with actual booking engine
-const BOOKING_ENGINE_URL = 'https://booking.borjshotelagadir.com';
+import { BOOKING_URL } from '@/lib/config';
 
 export default function BookingBar() {
   const [checkin, setCheckin] = useState('');
@@ -14,8 +13,7 @@ export default function BookingBar() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    const params = new URLSearchParams({ checkin, checkout, adults, children, room });
-    window.open(`${BOOKING_ENGINE_URL}?${params.toString()}`, '_blank');
+    window.open(BOOKING_URL, '_blank', 'noopener,noreferrer');
   };
 
   return (

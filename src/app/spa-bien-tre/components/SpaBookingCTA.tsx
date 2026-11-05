@@ -6,7 +6,7 @@ export default function SpaBookingCTA() {
   return (
     <section className="relative h-[400px] overflow-hidden">
       <AppImage
-        src="https://img.rocket.new/generatedImages/rocket_gen_img_14a32fed0-1772261238759.png"
+        src="/assets/images/spa/dsc1407.jpg"
         alt="Vue apaisante de l'espace wellness avec bougies, fleurs et ambiance spa de luxe"
         fill
         sizes="100vw"

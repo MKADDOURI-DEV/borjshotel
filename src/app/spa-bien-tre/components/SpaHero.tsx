@@ -5,7 +5,7 @@ export default function SpaHero() {
   return (
     <section className="relative h-[60vh] min-h-[450px] overflow-hidden">
       <AppImage
-        src="https://img.rocket.new/generatedImages/rocket_gen_img_1a24d59e4-1767793851948.png"
+        src="/assets/images/spa/dsc1406.jpg"
         alt="Espace spa luxueux avec hammam traditionnel marocain, lumières tamisées et ambiance de détente"
         fill
         priority

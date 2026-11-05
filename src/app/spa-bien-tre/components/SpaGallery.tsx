@@ -4,12 +4,12 @@ import AppImage from '@/components/ui/AppImage';
 import { X } from 'lucide-react';
 
 const spaImages = [
-{ id: 'spa-g-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_197874809-1772250293060.png", alt: 'Hammam traditionnel marocain avec vapeur, carrelage zellige et ambiance zen', tall: true },
-{ id: 'spa-g-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1ad86be97-1772968518955.png", alt: 'Piscine intérieure chauffée du spa avec lumière tamisée et ambiance sérénité', tall: false },
-{ id: 'spa-g-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1a17e5232-1772261868764.png", alt: 'Table de massage avec huiles essentielles et décoration marocaine', tall: false },
-{ id: 'spa-g-4', src: "https://images.unsplash.com/photo-1672983666814-a0e43bd3b1b9", alt: 'Espace relaxation du spa avec chaises longues et décoration naturelle', tall: true },
-{ id: 'spa-g-5', src: "https://images.unsplash.com/photo-1732024739880-c748d1a57f94", alt: 'Salle de fitness moderne avec équipements cardio et vue sur le jardin', tall: false },
-{ id: 'spa-g-6', src: "https://images.unsplash.com/photo-1655194911449-9f327e3d5a06", alt: 'Sauna en bois avec pierres chaudes et ambiance apaisante', tall: false }];
+{ id: 'spa-g-1', src: "/assets/images/spa/dsc1384.jpg", alt: 'Hammam traditionnel marocain avec vapeur, carrelage zellige et ambiance zen', tall: true },
+{ id: 'spa-g-2', src: "/assets/images/spa/dsc1386.jpg", alt: 'Espace hammam avec vasque en zellige', tall: false },
+{ id: 'spa-g-3', src: "/assets/images/spa/dsc1399.jpg", alt: 'Table de massage avec huiles essentielles et décoration marocaine', tall: false },
+{ id: 'spa-g-4', src: "/assets/images/spa/dsc1404.jpg", alt: 'Salle de massage double avec niches en tadelakt', tall: true },
+{ id: 'spa-g-5', src: "/assets/images/spa/dsc1392.jpg", alt: 'Soins et produits naturels du hammam', tall: false },
+{ id: 'spa-g-6', src: "/assets/images/spa/dsc1395.jpg", alt: 'Sauna en bois', tall: false }];
 
 
 export default function SpaGallery() {

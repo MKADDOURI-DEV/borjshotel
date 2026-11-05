@@ -6,7 +6,7 @@ export default function SpaTeaser() {
   return (
     <section className="relative h-[600px] lg:h-[700px] overflow-hidden" aria-label="Spa et bien-être">
       <AppImage
-        src="https://img.rocket.new/generatedImages/rocket_gen_img_1a24d59e4-1767793851948.png"
+        src="/assets/images/spa/dsc1404.jpg"
         alt="Espace spa luxueux avec hammam traditionnel marocain, bougies et ambiance zen"
         fill
         sizes="100vw"

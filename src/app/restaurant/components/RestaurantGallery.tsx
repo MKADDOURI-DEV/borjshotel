@@ -4,12 +4,12 @@ import AppImage from '@/components/ui/AppImage';
 import { X } from 'lucide-react';
 
 const restaurantImages = [
-{ id: 'rg-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_144899322-1784270064298.png", alt: 'Salle de restaurant principale avec tables dressées et décoration marocaine' },
-{ id: 'rg-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_15be6ae71-1773070157306.png", alt: 'Buffet petit-déjeuner avec fruits frais et viennoiseries' },
-{ id: 'rg-3', src: "https://images.unsplash.com/photo-1706893763563-6213f131cef2", alt: 'Rooftop bar au coucher du soleil avec vue sur Agadir' },
-{ id: 'rg-4', src: "https://images.unsplash.com/photo-1697754670540-7b0e5b52f38e", alt: 'Plat gastronomique marocain avec tajine et épices colorées' },
-{ id: 'rg-5', src: "https://img.rocket.new/generatedImages/rocket_gen_img_41f052f69-1790785055565.png", alt: 'Cocktails colorés au rooftop bar de l\'hôtel Borjs' },
-{ id: 'rg-6', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1c18b2817-1772494416729.png", alt: 'Cuisine méditerranéenne fraîche avec légumes grillés et herbes aromatiques' }];
+{ id: 'rg-1', src: "/assets/images/restaurant/dsc1474.jpg", alt: 'Salle de restaurant principale avec tables dressées et décoration marocaine' },
+{ id: 'rg-2', src: "/assets/images/restaurant/dsc1475.jpg", alt: 'Salle du restaurant avec sièges colorés' },
+{ id: 'rg-3', src: "/assets/images/restaurant/dsc1481.jpg", alt: 'Salle bar et brasserie avec écrans' },
+{ id: 'rg-4', src: "/assets/images/restaurant/dsc1478.jpg", alt: 'Mur de bouteilles du bar' },
+{ id: 'rg-5', src: "/assets/images/pool/dsc1507.jpg", alt: 'Bar de la piscine' },
+{ id: 'rg-6', src: "/assets/images/restaurant/dsc1479.jpg", alt: 'Comptoir du bar avec éclairage chaleureux' }];
 
 
 export default function RestaurantGallery() {

@@ -20,7 +20,7 @@ export default function IntroSection() {
           <div className="relative">
             <div className="image-reveal rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-[3/4]">
               <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_4dc1e2c4c-1790785055824.png"
+                src="/assets/images/rooms/dsc1424.jpg"
                 alt="Intérieur élégant de l'hôtel Borjs avec décoration marocaine raffinée et mobilier luxueux"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

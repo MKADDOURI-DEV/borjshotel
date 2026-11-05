@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import AppImage from '@/components/ui/AppImage';
 import { BedDouble, Users, Wifi, Wind, Tv, Lock, Coffee, Phone, Bath, ChevronLeft, ChevronRight } from 'lucide-react';
 
-// BACKEND INTEGRATION: Replace BOOKING_ENGINE_URL with actual booking engine URL from admin settings
-const BOOKING_ENGINE_URL = 'https://booking.borjshotelagadir.com';
+import { BOOKING_URL } from '@/lib/config';
 
 const baseAmenities = [
   { key: 'wifi', icon: Wifi, label: 'Wi-Fi gratuit' },
@@ -27,8 +26,8 @@ const rooms = [
   description: 'Chambre confortable et soigneusement aménagée, alliant décoration marocaine et équipements modernes pour un séjour reposant à Agadir. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'cls-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1d4e5bfcf-1773145657003.png", alt: 'Chambre classique avec décoration marocaine' },
-  { id: 'cls-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1c818d8e8-1770803352139.png", alt: 'Salle de bain moderne avec douche et finitions élégantes' }],
+  { id: 'cls-img-1', src: "/assets/images/rooms/dsc1460.jpg", alt: 'Chambre Classique – photo 1' },
+  { id: 'cls-img-2', src: "/assets/images/hotel/dsc1450.jpg", alt: 'Chambre Classique – photo 2' }],
   amenities: baseAmenities
 },
 {
@@ -41,8 +40,8 @@ const rooms = [
   description: 'Chambre de luxe avec vue sur la piscine de l\'hôtel, pour un séjour plus raffiné au calme. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'lux-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1d4e5bfcf-1773145657003.png", alt: 'Chambre de luxe avec vue sur la piscine' },
-  { id: 'lux-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1c818d8e8-1770803352139.png", alt: 'Salle de bain moderne avec douche et finitions élégantes' }],
+  { id: 'lux-img-1', src: "/assets/images/rooms/dsc1467.jpg", alt: 'Chambre de Luxe vue piscine – photo 1' },
+  { id: 'lux-img-2', src: "/assets/images/rooms/dsc1448.jpg", alt: 'Chambre de Luxe vue piscine – photo 2' }],
   amenities: baseAmenities
 },
 {
@@ -55,9 +54,12 @@ const rooms = [
   description: 'Suite Junior offrant plus d\'espace et de confort pour un séjour en toute sérénité. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'jun-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1dce45a39-1776113140890.png", alt: 'Suite Junior avec décoration marocaine' },
-  { id: 'jun-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_13b793222-1785153798426.png", alt: 'Chambre de la suite avec finitions haut de gamme' },
-  { id: 'jun-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1239373c7-1772249595914.png", alt: 'Terrasse de la suite avec vue sur le jardin et la piscine de l\'hôtel' }],
+  { id: 'jun-img-1', src: "/assets/images/rooms/dsc1445.jpg", alt: 'Suite Junior – photo 1' },
+  { id: 'jun-img-2', src: "/assets/images/rooms/dsc1446.jpg", alt: 'Suite Junior – photo 2' },
+  { id: 'jun-img-3', src: "/assets/images/rooms/dsc1447.jpg", alt: 'Suite Junior – photo 3' },
+  { id: 'jun-img-4', src: "/assets/images/rooms/dsc1449.jpg", alt: 'Suite Junior – photo 4' },
+  { id: 'jun-img-5', src: "/assets/images/rooms/dsc1453.jpg", alt: 'Suite Junior – photo 5' },
+  { id: 'jun-img-6', src: "/assets/images/rooms/dsc1463.jpg", alt: 'Suite Junior – photo 6' }],
   amenities: baseAmenities
 },
 {
@@ -70,9 +72,16 @@ const rooms = [
   description: 'Suite Senior spacieuse, pensée pour les voyageurs qui recherchent un confort supérieur. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'sen-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1dce45a39-1776113140890.png", alt: 'Suite Senior avec décoration marocaine' },
-  { id: 'sen-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_13b793222-1785153798426.png", alt: 'Chambre de la suite avec finitions haut de gamme' },
-  { id: 'sen-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1239373c7-1772249595914.png", alt: 'Terrasse de la suite avec vue sur le jardin et la piscine de l\'hôtel' }],
+  { id: 'sen-img-1', src: "/assets/images/rooms/dsc1435.jpg", alt: 'Suite Senior – photo 1' },
+  { id: 'sen-img-2', src: "/assets/images/rooms/dsc1436.jpg", alt: 'Suite Senior – photo 2' },
+  { id: 'sen-img-3', src: "/assets/images/rooms/dsc1437.jpg", alt: 'Suite Senior – photo 3' },
+  { id: 'sen-img-4', src: "/assets/images/rooms/dsc1438.jpg", alt: 'Suite Senior – photo 4' },
+  { id: 'sen-img-5', src: "/assets/images/rooms/dsc1439.jpg", alt: 'Suite Senior – photo 5' },
+  { id: 'sen-img-6', src: "/assets/images/rooms/dsc1440.jpg", alt: 'Suite Senior – photo 6' },
+  { id: 'sen-img-7', src: "/assets/images/rooms/dsc1441.jpg", alt: 'Suite Senior – photo 7' },
+  { id: 'sen-img-8', src: "/assets/images/rooms/dsc1442.jpg", alt: 'Suite Senior – photo 8' },
+  { id: 'sen-img-9', src: "/assets/images/rooms/dsc1443.jpg", alt: 'Suite Senior – photo 9' },
+  { id: 'sen-img-10', src: "/assets/images/rooms/dsc1444.jpg", alt: 'Suite Senior – photo 10' }],
   amenities: baseAmenities
 },
 {
@@ -85,9 +94,16 @@ const rooms = [
   description: 'Notre Suite Prestige avec vue sur la piscine, la catégorie la plus haut de gamme de l\'hôtel. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'pre-img-1', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1dce45a39-1776113140890.png", alt: 'Suite Prestige avec vue sur la piscine' },
-  { id: 'pre-img-2', src: "https://img.rocket.new/generatedImages/rocket_gen_img_13b793222-1785153798426.png", alt: 'Chambre de la suite avec finitions haut de gamme' },
-  { id: 'pre-img-3', src: "https://img.rocket.new/generatedImages/rocket_gen_img_1239373c7-1772249595914.png", alt: 'Terrasse de la suite avec vue sur le jardin et la piscine de l\'hôtel' }],
+  { id: 'pre-img-1', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Suite Prestige vue piscine – photo 1' },
+  { id: 'pre-img-2', src: "/assets/images/rooms/dsc1423.jpg", alt: 'Suite Prestige vue piscine – photo 2' },
+  { id: 'pre-img-3', src: "/assets/images/rooms/dsc1424.jpg", alt: 'Suite Prestige vue piscine – photo 3' },
+  { id: 'pre-img-4', src: "/assets/images/rooms/dsc1425.jpg", alt: 'Suite Prestige vue piscine – photo 4' },
+  { id: 'pre-img-5', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Prestige vue piscine – photo 5' },
+  { id: 'pre-img-6', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Prestige vue piscine – photo 6' },
+  { id: 'pre-img-7', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Prestige vue piscine – photo 7' },
+  { id: 'pre-img-8', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Prestige vue piscine – photo 8' },
+  { id: 'pre-img-9', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Prestige vue piscine – photo 9' },
+  { id: 'pre-img-10', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Prestige vue piscine – photo 10' }],
   amenities: baseAmenities
 }];
 
@@ -139,7 +155,7 @@ function RoomGallery({ images }: {images: typeof rooms[0]['images'];}) {
 export default function RoomsList() {
   const handleBook = (roomId: string) => {
     // BACKEND INTEGRATION: Connect to booking engine with room type parameter
-    window.open(`${BOOKING_ENGINE_URL}?room=${roomId}`, '_blank');
+    window.open(BOOKING_URL, '_blank', 'noopener,noreferrer');
   };
 
   return (

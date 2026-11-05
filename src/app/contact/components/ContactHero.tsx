@@ -5,7 +5,7 @@ export default function ContactHero() {
   return (
     <section className="relative h-[40vh] min-h-[320px] overflow-hidden">
       <AppImage
-        src="https://img.rocket.new/generatedImages/rocket_gen_img_4c73c0a3b-1790785055279.png"
+        src="/assets/images/pool/dsc1493.jpg"
         alt="Vue extérieure de l'hôtel Borjs avec architecture marocaine blanche et palmiers tropicaux à Agadir"
         fill
         priority

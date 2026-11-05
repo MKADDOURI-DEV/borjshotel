@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { BOOKING_URL } from '@/lib/config';
 import Link from 'next/link';
 import AppLogo from '@/components/ui/AppLogo';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
@@ -115,16 +116,16 @@ export default function SiteHeader({ currentLang = 'fr', onLangChange }: SiteHea
               </div>
 
               {/* Book CTA */}
-              <button className="btn-primary text-sm py-2.5 px-6">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm py-2.5 px-6">
                 {bookingLabel[activeLang]}
-              </button>
+              </a>
             </div>
 
             {/* Mobile hamburger */}
             <div className="flex lg:hidden items-center gap-3">
-              <button className="btn-primary text-sm py-2 px-4">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm py-2 px-4">
                 {bookingLabel[activeLang]}
-              </button>
+              </a>
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 className={`p-2 rounded-md transition-colors ${

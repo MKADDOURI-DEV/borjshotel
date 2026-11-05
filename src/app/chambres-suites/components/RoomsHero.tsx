@@ -5,7 +5,7 @@ export default function RoomsHero() {
   return (
     <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
       <AppImage
-        src="https://img.rocket.new/generatedImages/rocket_gen_img_144b1271a-1783617754894.png"
+        src="/assets/images/rooms/dsc1423.jpg"
         alt="Chambre luxueuse de l'hôtel Borjs avec vue panoramique et décoration marocaine raffinée"
         fill
         priority

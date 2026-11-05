@@ -18,7 +18,7 @@ export default function RestaurantTeaser() {
           <div className="relative order-2 lg:order-1">
             <div className="image-reveal rounded-2xl overflow-hidden aspect-[4/3]">
               <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_4561b5712-1789113488132.png"
+                src="/assets/images/restaurant/dsc1479.jpg"
                 alt="Restaurant élégant de l'hôtel Borjs avec décoration marocaine, tables dressées et ambiance chaleureuse"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

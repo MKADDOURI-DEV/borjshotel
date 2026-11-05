@@ -41,7 +41,7 @@ export default function PoolSection() {
           <div className="grid grid-cols-2 gap-4">
             <div className="image-reveal rounded-2xl overflow-hidden aspect-[3/4] col-span-1 row-span-2">
               <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_1ccd1236b-1773187410599.png"
+                src="/assets/images/pool/dsc1492.jpg"
                 alt="Piscine extérieure en forme courbe de l'hôtel Borjs entourée de palmiers tropicaux et transats"
                 fill
                 sizes="25vw"
@@ -51,8 +51,8 @@ export default function PoolSection() {
             </div>
             <div className="image-reveal rounded-2xl overflow-hidden aspect-[4/3]">
               <AppImage
-                src="https://img.rocket.new/generatedImages/rocket_gen_img_1ad86be97-1772968518955.png"
-                alt="Piscine intérieure chauffée avec lumière tamisée et atmosphère zen"
+                src="/assets/images/pool/dsc1487.jpg"
+                alt="Bassin de la piscine avec mosaïque bleue"
                 fill
                 sizes="25vw"
                 className="object-cover"
@@ -61,7 +61,7 @@ export default function PoolSection() {
             </div>
             <div className="image-reveal rounded-2xl overflow-hidden aspect-[4/3]">
               <AppImage
-                src="https://images.unsplash.com/photo-1620710304050-ed1511c60c8a"
+                src="/assets/images/pool/dsc1490.jpg"
                 alt="Transats et parasols élégants autour de la piscine de l'hôtel avec ciel ensoleillé"
                 fill
                 sizes="25vw"
