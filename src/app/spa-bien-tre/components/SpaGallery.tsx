@@ -48,7 +48,7 @@ export default function SpaGallery() {
             aria-label={`Voir en plein écran: ${img?.alt}`}
             onKeyDown={(e) => e?.key === 'Enter' && setLightbox(img?.id)}>
             
-              <div className="relative w-full" style={{ paddingBottom: img?.tall ? '133%' : '75%' }}>
+              <div className={`relative w-full ${img?.tall ? 'aspect-[3/4]' : 'aspect-[4/3]'}`}>
                 <AppImage
                 src={img?.src}
                 alt={img?.alt}

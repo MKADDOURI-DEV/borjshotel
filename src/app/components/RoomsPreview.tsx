@@ -6,76 +6,64 @@ import { BedDouble, Users, ArrowRight } from 'lucide-react';
 
 const rooms = [
 {
-  id: 'chambre-double-standard',
-  type: 'Chambre Double Standard',
+  id: 'chambre-standard',
+  type: 'Chambre Standard',
   subtitle: 'Chambre',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
   description: 'Chambre confortable alliant décoration marocaine et équipements modernes.',
   image: "/assets/images/rooms/dsc1467.jpg",
-  alt: 'Chambre Double Standard – Borj Hôtel Agadir',
+  alt: 'Chambre Standard – Borj Hôtel Agadir',
   badge: null,
   view: 'Selon disponibilité'
 },
 {
-  id: 'chambre-deluxe',
-  type: 'Chambre Deluxe',
+  id: 'chambre-deluxe-vue-mer-piscine',
+  type: 'Chambre Deluxe Vue Mer et Piscine',
   subtitle: 'Chambre',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  description: 'Chambre spacieuse et raffinée, pour un séjour haut de gamme.',
+  description: 'Chambre raffinée avec vue sur la mer et la piscine.',
   image: "/assets/images/rooms/dsc1460.jpg",
-  alt: 'Chambre Deluxe – Borj Hôtel Agadir',
-  badge: 'Deluxe',
-  view: 'Selon disponibilité'
-},
-{
-  id: 'suite-junior',
-  type: 'Suite Junior',
-  subtitle: 'Suite',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  description: 'Plus d\'espace et de confort pour un séjour en toute sérénité.',
-  image: "/assets/images/rooms/dsc1447.jpg",
-  alt: 'Suite Junior – Borj Hôtel Agadir',
-  badge: 'Suite',
-  view: 'Selon disponibilité'
-},
-{
-  id: 'suite-senior',
-  type: 'Suite Senior',
-  subtitle: 'Suite',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  description: 'Suite spacieuse pour un confort supérieur.',
-  image: "/assets/images/rooms/dsc1437.jpg",
-  alt: 'Suite Senior – Borj Hôtel Agadir',
-  badge: 'Suite',
-  view: 'Selon disponibilité'
-},
-{
-  id: 'suite-vue-mer',
-  type: 'Suite Vue Mer',
-  subtitle: 'Vue mer',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  description: 'Suite lumineuse avec vue sur la mer.',
-  image: "/assets/images/rooms/dsc1453.jpg",
-  alt: 'Suite Vue Mer – Borj Hôtel Agadir',
-  badge: 'Vue mer',
-  view: 'Vue sur la mer'
+  alt: 'Chambre Deluxe Vue Mer et Piscine – Borj Hôtel Agadir',
+  badge: 'Vue mer & piscine',
+  view: 'Vue sur la mer et la piscine'
 },
 {
   id: 'suite-junior-vue-jardin',
   type: 'Suite Junior Vue Jardin',
-  subtitle: 'Vue jardin',
+  subtitle: 'Suite',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  description: 'Suite Junior au calme, avec vue sur le jardin.',
-  image: "/assets/images/rooms/dsc1422.jpg",
+  description: 'Plus d\'espace et de confort, avec vue sur le jardin.',
+  image: "/assets/images/rooms/dsc1447.jpg",
   alt: 'Suite Junior Vue Jardin – Borj Hôtel Agadir',
   badge: 'Vue jardin',
   view: 'Vue sur le jardin'
+},
+{
+  id: 'suite-senior-vue-piscine',
+  type: 'Suite Senior Vue Piscine',
+  subtitle: 'Suite',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  description: 'Suite spacieuse avec vue sur la piscine.',
+  image: "/assets/images/rooms/dsc1437.jpg",
+  alt: 'Suite Senior Vue Piscine – Borj Hôtel Agadir',
+  badge: 'Vue piscine',
+  view: 'Vue sur la piscine'
+},
+{
+  id: 'suite-prestige-vue-mer-piscine',
+  type: 'Suite Prestige Vue Mer et Piscine',
+  subtitle: 'Suite',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  description: 'Notre catégorie la plus haut de gamme, vue mer et piscine.',
+  image: "/assets/images/rooms/dsc1422.jpg",
+  alt: 'Suite Prestige Vue Mer et Piscine – Borj Hôtel Agadir',
+  badge: 'Prestige',
+  view: 'Vue sur la mer et la piscine'
 }];
 
 
@@ -94,7 +82,7 @@ export default function RoomsPreview() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {rooms?.map((room) =>
           <div key={room?.id} className="room-card">
               {/* Image */}

@@ -12,7 +12,7 @@ const venues = [
   description: 'Notre restaurant marocain est le cœur de la table du Borjs Hotel. Dans un cadre élégant et chaleureux, découvrez les saveurs authentiques de la cuisine marocaine traditionnelle, préparées avec des ingrédients locaux frais sélectionnés chaque jour.',
   cuisines: ['Cuisine marocaine', 'Spécialités traditionnelles', 'Produits frais locaux'],
   meals: ['Déjeuner', 'Dîner'],
-  image: "/assets/images/restaurant/dsc1473.jpg",
+  image: "/assets/images/restaurant/dsc1481.jpg",
   alt: 'Restaurant marocain de l\'hôtel Borjs avec décoration marocaine, tables dressées et ambiance chaleureuse',
   location: 'Rez-de-chaussée'
 },
