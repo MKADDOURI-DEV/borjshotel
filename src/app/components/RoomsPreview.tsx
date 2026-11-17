@@ -6,26 +6,40 @@ import { BedDouble, Users, ArrowRight } from 'lucide-react';
 
 const rooms = [
 {
-  id: 'chambre-classique',
-  type: 'Chambre Classique',
+  id: 'chambre-double-standard',
+  type: 'Chambre Double Standard',
   subtitle: 'Chambre',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
   description: 'Chambre confortable alliant décoration marocaine et équipements modernes.',
-  image: "/assets/images/rooms/dsc1460.jpg",
-  alt: 'Chambre classique élégante avec décoration marocaine',
-  badge: null
+  image: "/assets/images/rooms/dsc1467.jpg",
+  alt: 'Chambre Double Standard – Borj Hôtel Agadir',
+  badge: null,
+  view: 'Selon disponibilité'
 },
 {
-  id: 'chambre-luxe',
-  type: 'Chambre de Luxe',
-  subtitle: 'Vue piscine',
+  id: 'chambre-double-vue-mer',
+  type: 'Chambre Double Vue Mer',
+  subtitle: 'Vue mer',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  description: 'Chambre de luxe avec vue sur la piscine de l\'hôtel.',
-  image: "/assets/images/rooms/dsc1467.jpg",
-  alt: 'Chambre de luxe avec vue sur la piscine',
-  badge: 'Vue piscine'
+  description: 'Chambre double avec vue sur la mer.',
+  image: "/assets/images/rooms/dsc1460.jpg",
+  alt: 'Chambre Double Vue Mer – Borj Hôtel Agadir',
+  badge: 'Vue mer',
+  view: 'Vue sur la mer'
+},
+{
+  id: 'suite',
+  type: 'Suite',
+  subtitle: 'Suite',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  description: 'Espace et confort pour un séjour en toute sérénité.',
+  image: "/assets/images/rooms/dsc1440.jpg",
+  alt: 'Suite – Borj Hôtel Agadir',
+  badge: 'Suite',
+  view: 'Selon disponibilité'
 },
 {
   id: 'suite-junior',
@@ -35,8 +49,9 @@ const rooms = [
   bed: 'Single ou double',
   description: 'Plus d\'espace et de confort pour un séjour en toute sérénité.',
   image: "/assets/images/rooms/dsc1447.jpg",
-  alt: 'Suite Junior luxueuse avec décoration marocaine',
-  badge: 'Suite'
+  alt: 'Suite Junior – Borj Hôtel Agadir',
+  badge: 'Suite',
+  view: 'Selon disponibilité'
 },
 {
   id: 'suite-senior',
@@ -46,19 +61,33 @@ const rooms = [
   bed: 'Single ou double',
   description: 'Suite spacieuse pour un confort supérieur.',
   image: "/assets/images/rooms/dsc1437.jpg",
-  alt: 'Suite Senior spacieuse avec décoration marocaine',
-  badge: 'Suite'
+  alt: 'Suite Senior – Borj Hôtel Agadir',
+  badge: 'Suite',
+  view: 'Selon disponibilité'
 },
 {
-  id: 'suite-prestige',
-  type: 'Suite Prestige',
+  id: 'suite-vue-mer',
+  type: 'Suite Vue Mer',
+  subtitle: 'Vue mer',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  description: 'Suite lumineuse avec vue sur la mer.',
+  image: "/assets/images/rooms/dsc1453.jpg",
+  alt: 'Suite Vue Mer – Borj Hôtel Agadir',
+  badge: 'Vue mer',
+  view: 'Vue sur la mer'
+},
+{
+  id: 'suite-vue-piscine',
+  type: 'Suite Vue Piscine',
   subtitle: 'Vue piscine',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
   description: 'Notre catégorie la plus haut de gamme, avec vue sur la piscine.',
   image: "/assets/images/rooms/dsc1422.jpg",
-  alt: 'Suite Prestige avec vue sur la piscine',
-  badge: 'Prestige'
+  alt: 'Suite Vue Piscine – Borj Hôtel Agadir',
+  badge: 'Vue piscine',
+  view: 'Vue sur la piscine'
 }];
 
 
@@ -77,7 +106,7 @@ export default function RoomsPreview() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {rooms?.map((room) =>
           <div key={room?.id} className="room-card">
               {/* Image */}

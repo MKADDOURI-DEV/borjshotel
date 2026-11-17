@@ -17,8 +17,8 @@ const baseAmenities = [
 
 const rooms = [
 {
-  id: 'chambre-classique',
-  type: 'Chambre Classique',
+  id: 'chambre-double-standard',
+  type: 'Chambre Double Standard',
   badge: null,
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
@@ -26,22 +26,38 @@ const rooms = [
   description: 'Chambre confortable et soigneusement aménagée, alliant décoration marocaine et équipements modernes pour un séjour reposant à Agadir. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'cls-img-1', src: "/assets/images/rooms/dsc1460.jpg", alt: 'Chambre Classique – photo 1' },
-  { id: 'cls-img-2', src: "/assets/images/hotel/dsc1450.jpg", alt: 'Chambre Classique – photo 2' }],
+  { id: 'std-img-1', src: "/assets/images/rooms/dsc1467.jpg", alt: 'Chambre Double Standard – photo 1' },
+  { id: 'std-img-2', src: "/assets/images/rooms/dsc1448.jpg", alt: 'Chambre Double Standard – photo 2' }],
   amenities: baseAmenities
 },
 {
-  id: 'chambre-luxe-vue-piscine',
-  type: 'Chambre de Luxe',
-  badge: 'Vue piscine',
+  id: 'chambre-double-vue-mer',
+  type: 'Chambre Double Vue Mer',
+  badge: 'Vue mer',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  view: 'Vue sur la piscine',
-  description: 'Chambre de luxe avec vue sur la piscine de l\'hôtel, pour un séjour plus raffiné au calme. Disponible en occupation single ou double.',
+  view: 'Vue sur la mer',
+  description: 'Chambre double avec vue sur la mer, pour réveiller vos matins face à l\'horizon d\'Agadir. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'lux-img-1', src: "/assets/images/rooms/dsc1467.jpg", alt: 'Chambre de Luxe vue piscine – photo 1' },
-  { id: 'lux-img-2', src: "/assets/images/rooms/dsc1448.jpg", alt: 'Chambre de Luxe vue piscine – photo 2' }],
+  { id: 'cdm-img-1', src: "/assets/images/rooms/dsc1460.jpg", alt: 'Chambre Double Vue Mer – photo 1' },
+  { id: 'cdm-img-2', src: "/assets/images/hotel/dsc1450.jpg", alt: 'Chambre Double Vue Mer – photo 2' }],
+  amenities: baseAmenities
+},
+{
+  id: 'suite',
+  type: 'Suite',
+  badge: 'Suite',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  view: 'Selon disponibilité',
+  description: 'Suite offrant espace et confort pour un séjour en toute sérénité, avec décoration marocaine soignée. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'sui-img-1', src: "/assets/images/rooms/dsc1440.jpg", alt: 'Suite – photo 1' },
+  { id: 'sui-img-2', src: "/assets/images/rooms/dsc1444.jpg", alt: 'Suite – photo 2' },
+  { id: 'sui-img-3', src: "/assets/images/rooms/dsc1441.jpg", alt: 'Suite – photo 3' },
+  { id: 'sui-img-4', src: "/assets/images/rooms/dsc1442.jpg", alt: 'Suite – photo 4' }],
   amenities: baseAmenities
 },
 {
@@ -54,12 +70,10 @@ const rooms = [
   description: 'Suite Junior offrant plus d\'espace et de confort pour un séjour en toute sérénité. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'jun-img-1', src: "/assets/images/rooms/dsc1445.jpg", alt: 'Suite Junior – photo 1' },
-  { id: 'jun-img-2', src: "/assets/images/rooms/dsc1446.jpg", alt: 'Suite Junior – photo 2' },
-  { id: 'jun-img-3', src: "/assets/images/rooms/dsc1447.jpg", alt: 'Suite Junior – photo 3' },
-  { id: 'jun-img-4', src: "/assets/images/rooms/dsc1449.jpg", alt: 'Suite Junior – photo 4' },
-  { id: 'jun-img-5', src: "/assets/images/rooms/dsc1453.jpg", alt: 'Suite Junior – photo 5' },
-  { id: 'jun-img-6', src: "/assets/images/rooms/dsc1463.jpg", alt: 'Suite Junior – photo 6' }],
+  { id: 'jun-img-1', src: "/assets/images/rooms/dsc1447.jpg", alt: 'Suite Junior – photo 1' },
+  { id: 'jun-img-2', src: "/assets/images/rooms/dsc1445.jpg", alt: 'Suite Junior – photo 2' },
+  { id: 'jun-img-3', src: "/assets/images/rooms/dsc1446.jpg", alt: 'Suite Junior – photo 3' },
+  { id: 'jun-img-4', src: "/assets/images/rooms/dsc1463.jpg", alt: 'Suite Junior – photo 4' }],
   amenities: baseAmenities
 },
 {
@@ -72,38 +86,48 @@ const rooms = [
   description: 'Suite Senior spacieuse, pensée pour les voyageurs qui recherchent un confort supérieur. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'sen-img-1', src: "/assets/images/rooms/dsc1435.jpg", alt: 'Suite Senior – photo 1' },
-  { id: 'sen-img-2', src: "/assets/images/rooms/dsc1436.jpg", alt: 'Suite Senior – photo 2' },
-  { id: 'sen-img-3', src: "/assets/images/rooms/dsc1437.jpg", alt: 'Suite Senior – photo 3' },
+  { id: 'sen-img-1', src: "/assets/images/rooms/dsc1437.jpg", alt: 'Suite Senior – photo 1' },
+  { id: 'sen-img-2', src: "/assets/images/rooms/dsc1435.jpg", alt: 'Suite Senior – photo 2' },
+  { id: 'sen-img-3', src: "/assets/images/rooms/dsc1436.jpg", alt: 'Suite Senior – photo 3' },
   { id: 'sen-img-4', src: "/assets/images/rooms/dsc1438.jpg", alt: 'Suite Senior – photo 4' },
   { id: 'sen-img-5', src: "/assets/images/rooms/dsc1439.jpg", alt: 'Suite Senior – photo 5' },
-  { id: 'sen-img-6', src: "/assets/images/rooms/dsc1440.jpg", alt: 'Suite Senior – photo 6' },
-  { id: 'sen-img-7', src: "/assets/images/rooms/dsc1441.jpg", alt: 'Suite Senior – photo 7' },
-  { id: 'sen-img-8', src: "/assets/images/rooms/dsc1442.jpg", alt: 'Suite Senior – photo 8' },
-  { id: 'sen-img-9', src: "/assets/images/rooms/dsc1443.jpg", alt: 'Suite Senior – photo 9' },
-  { id: 'sen-img-10', src: "/assets/images/rooms/dsc1444.jpg", alt: 'Suite Senior – photo 10' }],
+  { id: 'sen-img-6', src: "/assets/images/rooms/dsc1443.jpg", alt: 'Suite Senior – photo 6' }],
   amenities: baseAmenities
 },
 {
-  id: 'suite-prestige-vue-piscine',
-  type: 'Suite Prestige',
+  id: 'suite-vue-mer',
+  type: 'Suite Vue Mer',
+  badge: 'Vue mer',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  view: 'Vue sur la mer',
+  description: 'Suite avec vue sur la mer, un espace de vie lumineux ouvert sur l\'horizon d\'Agadir. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'svm-img-1', src: "/assets/images/rooms/dsc1453.jpg", alt: 'Suite Vue Mer – photo 1' },
+  { id: 'svm-img-2', src: "/assets/images/rooms/dsc1449.jpg", alt: 'Suite Vue Mer – photo 2' }],
+  amenities: baseAmenities
+},
+{
+  id: 'suite-vue-piscine',
+  type: 'Suite Vue Piscine',
   badge: 'Vue piscine',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
   view: 'Vue sur la piscine',
-  description: 'Notre Suite Prestige avec vue sur la piscine, la catégorie la plus haut de gamme de l\'hôtel. Disponible en occupation single ou double.',
+  description: 'Suite avec vue sur la piscine de l\'hôtel, la catégorie la plus haut de gamme de l\'établissement. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'pre-img-1', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Suite Prestige vue piscine – photo 1' },
-  { id: 'pre-img-2', src: "/assets/images/rooms/dsc1423.jpg", alt: 'Suite Prestige vue piscine – photo 2' },
-  { id: 'pre-img-3', src: "/assets/images/rooms/dsc1424.jpg", alt: 'Suite Prestige vue piscine – photo 3' },
-  { id: 'pre-img-4', src: "/assets/images/rooms/dsc1425.jpg", alt: 'Suite Prestige vue piscine – photo 4' },
-  { id: 'pre-img-5', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Prestige vue piscine – photo 5' },
-  { id: 'pre-img-6', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Prestige vue piscine – photo 6' },
-  { id: 'pre-img-7', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Prestige vue piscine – photo 7' },
-  { id: 'pre-img-8', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Prestige vue piscine – photo 8' },
-  { id: 'pre-img-9', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Prestige vue piscine – photo 9' },
-  { id: 'pre-img-10', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Prestige vue piscine – photo 10' }],
+  { id: 'svp-img-1', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Suite Vue Piscine – photo 1' },
+  { id: 'svp-img-2', src: "/assets/images/rooms/dsc1423.jpg", alt: 'Suite Vue Piscine – photo 2' },
+  { id: 'svp-img-3', src: "/assets/images/rooms/dsc1424.jpg", alt: 'Suite Vue Piscine – photo 3' },
+  { id: 'svp-img-4', src: "/assets/images/rooms/dsc1425.jpg", alt: 'Suite Vue Piscine – photo 4' },
+  { id: 'svp-img-5', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Vue Piscine – photo 5' },
+  { id: 'svp-img-6', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Vue Piscine – photo 6' },
+  { id: 'svp-img-7', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Vue Piscine – photo 7' },
+  { id: 'svp-img-8', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Vue Piscine – photo 8' },
+  { id: 'svp-img-9', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Vue Piscine – photo 9' },
+  { id: 'svp-img-10', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Vue Piscine – photo 10' }],
   amenities: baseAmenities
 }];
 
@@ -166,7 +190,7 @@ export default function RoomsList() {
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-3">Nos hébergements</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Choisissez votre chambre</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Du confort d&apos;une chambre classique à l&apos;élégance de la Suite Prestige, chaque catégorie est disponible en occupation single ou double.
+            De la Chambre Double Standard à la Suite Vue Piscine, chaque catégorie est disponible en occupation single ou double.
           </p>
         </div>
 
