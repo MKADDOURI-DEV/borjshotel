@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Calendar, Users, ChevronDown, Search } from 'lucide-react';
 
-import { BOOKING_URL } from '@/lib/config';
+import { buildBookingUrl } from '@/lib/config';
 
 export default function BookingBar() {
   const [checkin, setCheckin] = useState('');
@@ -18,11 +18,14 @@ export default function BookingBar() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    const params = new URLSearchParams({ checkin, checkout, adults, children });
-    childAges.forEach((age, i) => params.set(`child${i + 1}_age`, age));
-    // Les paramètres sont placés avant le hash (#) du moteur Nozoul
-    const [base, hash] = BOOKING_URL.split('#');
-    window.open(`${base}?${params.toString()}#${hash}`, '_blank', 'noopener,noreferrer');
+    const url = buildBookingUrl({
+      checkIn: checkin,
+      checkOut: checkout,
+      adults: Number(adults),
+      children: Number(children),
+      childAges,
+    });
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
