@@ -21,14 +21,14 @@ const openingHours = [
     id: 'hours-dinner',
     venue: 'Dîner',
     schedule: [
-      { key: 'dinner-daily', days: 'Tous les jours', hours: '19h00 – 22h30' },
+      { key: 'dinner-daily', days: 'Tous les jours', hours: '19h00 – 00h00' },
     ],
   },
   {
     id: 'hours-rooftop',
     venue: 'Rooftop Bar',
     schedule: [
-      { key: 'rooftop-daily', days: 'Tous les jours', hours: '17h00 – 00h00' },
+      { key: 'rooftop-daily', days: 'Tous les jours', hours: '14h00 – 02h00' },
     ],
   },
 ];

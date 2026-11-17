@@ -88,7 +88,7 @@ export default function SiteFooter() {
           <div>
             <h4 className="text-white font-semibold text-sm tracking-widest uppercase mb-5">Services</h4>
             <ul className="space-y-3">
-              {['Piscines', 'Spa & Hammam', 'Fitness', 'Rooftop Bar', 'Room Service', 'Navette']?.map((s) => (
+              {['Piscine', 'Spa & Hammam', 'Rooftop Bar', 'Room Service', 'Navette']?.map((s) => (
                 <li key={`footer-service-${s}`}>
                   <span className="text-white/60 text-sm">{s}</span>
                 </li>
@@ -104,8 +104,12 @@ export default function SiteFooter() {
           <div className="flex items-center gap-4">
             <span className="text-white/40 text-xs">Agadir, Maroc</span>
             <span className="w-1 h-1 rounded-full bg-white/30" />
-            <a href="mailto:contact@borjshotelagadir.com" className="text-white/40 text-xs hover:text-accent transition-colors">
-              contact@borjshotelagadir.com
+            <a href="mailto:Reservation@borjshotelagadir.com" className="text-white/40 text-xs hover:text-accent transition-colors">
+              Reservation@borjshotelagadir.com
+            </a>
+            <span className="w-1 h-1 rounded-full bg-white/30" />
+            <a href="mailto:Commercial@borjshotelagadir.com" className="text-white/40 text-xs hover:text-accent transition-colors">
+              Commercial@borjshotelagadir.com
             </a>
           </div>
         </div>

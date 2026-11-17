@@ -1,5 +1,5 @@
 import React from 'react';
-import { Droplets, Flame, Dumbbell, Flower2, Heart } from 'lucide-react';
+import { Flame, Flower2, Heart } from 'lucide-react';
 
 // BACKEND INTEGRATION: These spa services should be fetched from the admin panel / CMS
 const spaServices = [
@@ -20,36 +20,12 @@ const spaServices = [
     category: 'Massages',
   },
   {
-    id: 'spa-pool',
-    icon: Droplets,
-    title: 'Piscine Intérieure Chauffée',
-    description: 'Profitez de notre piscine intérieure chauffée toute l\'année dans un cadre intime et relaxant. Idéale pour une détente après vos soins.',
-    duration: 'Accès libre',
-    category: 'Aqua-détente',
-  },
-  {
-    id: 'spa-sauna',
-    icon: Flame,
-    title: 'Sauna',
-    description: 'Notre sauna vous offre les bienfaits de la chaleur sèche pour éliminer les toxines, améliorer la circulation et favoriser une relaxation profonde.',
-    duration: 'Sur demande',
-    category: 'Thermothérapie',
-  },
-  {
     id: 'spa-beauty',
     icon: Flower2,
     title: 'Soins de Beauté',
     description: 'Soins du visage, manucure, pédicure et traitements corporels réalisés par nos esthéticiennes avec des produits de qualité adaptés à votre type de peau.',
     duration: 'Sur demande',
     category: 'Beauté',
-  },
-  {
-    id: 'spa-fitness',
-    icon: Dumbbell,
-    title: 'Salle de Fitness',
-    description: 'Maintenez votre routine sportive dans notre salle de fitness entièrement équipée d\'appareils cardio et de musculation modernes.',
-    duration: 'Accès libre',
-    category: 'Fitness',
   },
 ];
 

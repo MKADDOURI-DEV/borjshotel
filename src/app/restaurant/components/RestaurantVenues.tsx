@@ -7,13 +7,13 @@ const venues = [
 {
   id: 'venue-principal',
   icon: UtensilsCrossed,
-  name: 'Restaurant Principal',
-  tagline: 'Cuisine Marocaine & Méditerranéenne',
-  description: 'Notre restaurant principal vous accueille dans un cadre élégant et chaleureux pour déguster une cuisine raffinée mêlant saveurs marocaines authentiques et influences méditerranéennes. Des ingrédients locaux frais sélectionnés chaque jour pour votre plaisir.',
-  cuisines: ['Marocaine', 'Méditerranéenne', 'Internationale', 'Poissons & Fruits de mer'],
+  name: 'Restaurant Marocain',
+  tagline: 'Notre spécialité · Cuisine marocaine authentique',
+  description: 'Notre restaurant marocain est le cœur de la table du Borjs Hotel. Dans un cadre élégant et chaleureux, découvrez les saveurs authentiques de la cuisine marocaine traditionnelle, préparées avec des ingrédients locaux frais sélectionnés chaque jour.',
+  cuisines: ['Cuisine marocaine', 'Spécialités traditionnelles', 'Produits frais locaux'],
   meals: ['Déjeuner', 'Dîner'],
   image: "/assets/images/restaurant/dsc1473.jpg",
-  alt: 'Restaurant principal de l\'hôtel Borjs avec décoration marocaine, tables dressées et ambiance chaleureuse',
+  alt: 'Restaurant marocain de l\'hôtel Borjs avec décoration marocaine, tables dressées et ambiance chaleureuse',
   location: 'Rez-de-chaussée'
 },
 {
@@ -35,8 +35,8 @@ const venues = [
   tagline: 'Vue panoramique sur la baie d\'Agadir',
   description: 'Culminez votre journée au Rooftop Bar avec une vue à couper le souffle sur la baie d\'Agadir et le coucher de soleil atlantique. Cocktails créatifs, vins sélectionnés et petites bouchées légères dans une atmosphère lounge unique.',
   cuisines: ['Cocktails', 'Vins & Boissons', 'Bouchées légères', 'Snacks'],
-  meals: ['Déjeuner léger', 'Apéritif', 'Soirée'],
-  image: "/assets/images/pool/dsc1509.jpg",
+  meals: ['Ouvert de 14h à 02h', 'Apéritif', 'Soirée'],
+  image: "/assets/images/pool/dsc1500.jpg",
   alt: 'Rooftop bar avec vue panoramique sur la baie d\'Agadir au coucher du soleil',
   location: 'Rooftop'
 }];

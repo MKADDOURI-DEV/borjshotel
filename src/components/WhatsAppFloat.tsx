@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export default function WhatsAppFloat() {
   const [hovered, setHovered] = useState(false);
-  const phone = '212528381919';
+  const phone = '212666262244';
   const message = encodeURIComponent('Bonjour, je souhaite obtenir des informations sur votre hôtel.');
 
   return (

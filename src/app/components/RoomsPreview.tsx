@@ -18,27 +18,15 @@ const rooms = [
   view: 'Selon disponibilité'
 },
 {
-  id: 'chambre-double-vue-mer',
-  type: 'Chambre Double Vue Mer',
-  subtitle: 'Vue mer',
+  id: 'chambre-deluxe',
+  type: 'Chambre Deluxe',
+  subtitle: 'Chambre',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  description: 'Chambre double avec vue sur la mer.',
+  description: 'Chambre spacieuse et raffinée, pour un séjour haut de gamme.',
   image: "/assets/images/rooms/dsc1460.jpg",
-  alt: 'Chambre Double Vue Mer – Borj Hôtel Agadir',
-  badge: 'Vue mer',
-  view: 'Vue sur la mer'
-},
-{
-  id: 'suite',
-  type: 'Suite',
-  subtitle: 'Suite',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  description: 'Espace et confort pour un séjour en toute sérénité.',
-  image: "/assets/images/rooms/dsc1440.jpg",
-  alt: 'Suite – Borj Hôtel Agadir',
-  badge: 'Suite',
+  alt: 'Chambre Deluxe – Borj Hôtel Agadir',
+  badge: 'Deluxe',
   view: 'Selon disponibilité'
 },
 {
@@ -78,16 +66,16 @@ const rooms = [
   view: 'Vue sur la mer'
 },
 {
-  id: 'suite-vue-piscine',
-  type: 'Suite Vue Piscine',
-  subtitle: 'Vue piscine',
+  id: 'suite-junior-vue-jardin',
+  type: 'Suite Junior Vue Jardin',
+  subtitle: 'Vue jardin',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  description: 'Notre catégorie la plus haut de gamme, avec vue sur la piscine.',
+  description: 'Suite Junior au calme, avec vue sur le jardin.',
   image: "/assets/images/rooms/dsc1422.jpg",
-  alt: 'Suite Vue Piscine – Borj Hôtel Agadir',
-  badge: 'Vue piscine',
-  view: 'Vue sur la piscine'
+  alt: 'Suite Junior Vue Jardin – Borj Hôtel Agadir',
+  badge: 'Vue jardin',
+  view: 'Vue sur le jardin'
 }];
 
 
@@ -101,7 +89,7 @@ export default function RoomsPreview() {
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-3">Hébergement</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Chambres & Suites</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Découvrez nos 48 chambres et suites spacieuses, conçues pour votre confort avec une touche d&apos;élégance marocaine.
+            Découvrez nos 121 chambres et suites spacieuses, conçues pour votre confort avec une touche d&apos;élégance marocaine.
           </p>
         </div>
 

@@ -4,9 +4,9 @@ import AppImage from '@/components/ui/AppImage';
 import { UtensilsCrossed, Coffee, Sunset } from 'lucide-react';
 
 const venues = [
-{ key: 'venue-main', icon: UtensilsCrossed, name: 'Restaurant Principal', desc: 'Cuisine méditerranéenne et marocaine raffinée dans un cadre élégant.' },
+{ key: 'venue-main', icon: UtensilsCrossed, name: 'Restaurant Marocain', desc: 'Notre spécialité : une cuisine marocaine authentique dans un cadre élégant.' },
 { key: 'venue-breakfast', icon: Coffee, name: 'Petit-déjeuner', desc: 'Buffet généreux avec produits locaux frais chaque matin.' },
-{ key: 'venue-rooftop', icon: Sunset, name: 'Rooftop Bar', desc: 'Cocktails et vues panoramiques sur la baie d\'Agadir.' }];
+{ key: 'venue-rooftop', icon: Sunset, name: 'Rooftop Bar', desc: 'Vues panoramiques sur la baie d\'Agadir, ouvert de 14h à 02h.' }];
 
 
 export default function RestaurantTeaser() {

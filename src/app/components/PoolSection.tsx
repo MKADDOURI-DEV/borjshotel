@@ -4,7 +4,6 @@ import { Waves, Sun, Thermometer } from 'lucide-react';
 
 const poolFeatures = [
 { key: 'pool-outdoor', icon: Waves, title: 'Piscine extérieure', desc: 'Piscine en forme courbe au cœur de l\'hôtel, entourée de palmiers et transats.' },
-{ key: 'pool-indoor', icon: Thermometer, title: 'Piscine intérieure chauffée', desc: 'Profitez de la piscine couverte chauffée toute l\'année.' },
 { key: 'pool-sun', icon: Sun, title: 'Espace détente', desc: 'Transats, parasols et service de boissons pour une relaxation parfaite.' }];
 
 

@@ -3,9 +3,9 @@ import AppImage from '@/components/ui/AppImage';
 import { Wifi, Waves, UtensilsCrossed, Sparkles, Clock, BedDouble } from 'lucide-react';
 
 const benefits = [
-{ key: 'benefit-suites', icon: BedDouble, label: 'Suites spacieuses', desc: '48 suites confortables' },
-{ key: 'benefit-spa', icon: Sparkles, label: 'Spa & Bien-être', desc: 'Hammam, massages, sauna' },
-{ key: 'benefit-pool', icon: Waves, label: 'Piscines', desc: 'Extérieure & intérieure chauffée' },
+{ key: 'benefit-suites', icon: BedDouble, label: 'Chambres & suites', desc: '121 chambres et suites' },
+{ key: 'benefit-spa', icon: Sparkles, label: 'Spa & Bien-être', desc: 'Hammam et massages' },
+{ key: 'benefit-pool', icon: Waves, label: 'Piscine', desc: 'Piscine extérieure' },
 { key: 'benefit-restaurant', icon: UtensilsCrossed, label: 'Restaurants', desc: '3 restaurants sur place' },
 { key: 'benefit-wifi', icon: Wifi, label: 'Wi-Fi gratuit', desc: 'Dans tout l\'hôtel' },
 { key: 'benefit-reception', icon: Clock, label: 'Réception 24h/24', desc: 'À votre service' }];
@@ -32,7 +32,7 @@ export default function IntroSection() {
             <div className="absolute -bottom-6 -right-6 bg-card border border-border rounded-xl p-5 shadow-luxury hidden lg:block">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                  <span className="text-accent font-bold text-lg">48</span>
+                  <span className="text-accent font-bold text-sm">121</span>
                 </div>
                 <div>
                   <p className="font-semibold text-foreground text-sm">Suites & Chambres</p>
@@ -58,7 +58,7 @@ export default function IntroSection() {
               Niché au cœur de la Cité Baie des Palmiers à Agadir, le Borjs Hotel Suites & Spa est un havre de sérénité alliant architecture marocaine authentique et confort moderne.
             </p>
             <p className="text-muted-foreground text-base leading-relaxed mb-8">
-              À seulement 10 minutes à pied de la plage d&apos;Agadir, notre établissement 4 étoiles vous propose 48 suites spacieuses, trois restaurants, une piscine extérieure et intérieure chauffée, un spa traditionnel et un rooftop avec vue panoramique sur la baie.
+              À seulement 10 minutes à pied de la plage d&apos;Agadir, notre établissement 4 étoiles vous propose 121 chambres et suites, un restaurant marocain (petit-déjeuner, déjeuner et dîner), une piscine extérieure, un spa traditionnel et un rooftop avec vue panoramique sur la baie.
             </p>
 
             {/* Benefits grid */}

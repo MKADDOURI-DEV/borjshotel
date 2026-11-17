@@ -31,33 +31,17 @@ const rooms = [
   amenities: baseAmenities
 },
 {
-  id: 'chambre-double-vue-mer',
-  type: 'Chambre Double Vue Mer',
-  badge: 'Vue mer',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  view: 'Vue sur la mer',
-  description: 'Chambre double avec vue sur la mer, pour réveiller vos matins face à l\'horizon d\'Agadir. Disponible en occupation single ou double.',
-  images:
-  [
-  { id: 'cdm-img-1', src: "/assets/images/rooms/dsc1460.jpg", alt: 'Chambre Double Vue Mer – photo 1' },
-  { id: 'cdm-img-2', src: "/assets/images/hotel/dsc1450.jpg", alt: 'Chambre Double Vue Mer – photo 2' }],
-  amenities: baseAmenities
-},
-{
-  id: 'suite',
-  type: 'Suite',
-  badge: 'Suite',
+  id: 'chambre-deluxe',
+  type: 'Chambre Deluxe',
+  badge: 'Deluxe',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
   view: 'Selon disponibilité',
-  description: 'Suite offrant espace et confort pour un séjour en toute sérénité, avec décoration marocaine soignée. Disponible en occupation single ou double.',
+  description: 'Chambre Deluxe spacieuse et raffinée, alliant décoration marocaine et équipements modernes. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'sui-img-1', src: "/assets/images/rooms/dsc1440.jpg", alt: 'Suite – photo 1' },
-  { id: 'sui-img-2', src: "/assets/images/rooms/dsc1444.jpg", alt: 'Suite – photo 2' },
-  { id: 'sui-img-3', src: "/assets/images/rooms/dsc1441.jpg", alt: 'Suite – photo 3' },
-  { id: 'sui-img-4', src: "/assets/images/rooms/dsc1442.jpg", alt: 'Suite – photo 4' }],
+  { id: 'dlx-img-1', src: "/assets/images/rooms/dsc1460.jpg", alt: 'Chambre Deluxe – photo 1' },
+  { id: 'dlx-img-2', src: "/assets/images/hotel/dsc1450.jpg", alt: 'Chambre Deluxe – photo 2' }],
   amenities: baseAmenities
 },
 {
@@ -109,25 +93,25 @@ const rooms = [
   amenities: baseAmenities
 },
 {
-  id: 'suite-vue-piscine',
-  type: 'Suite Vue Piscine',
-  badge: 'Vue piscine',
+  id: 'suite-junior-vue-jardin',
+  type: 'Suite Junior Vue Jardin',
+  badge: 'Vue jardin',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  view: 'Vue sur la piscine',
-  description: 'Suite avec vue sur la piscine de l\'hôtel, la catégorie la plus haut de gamme de l\'établissement. Disponible en occupation single ou double.',
+  view: 'Vue sur le jardin',
+  description: 'Suite Junior avec vue sur le jardin de l\'hôtel, pour un séjour au calme. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'svp-img-1', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Suite Vue Piscine – photo 1' },
-  { id: 'svp-img-2', src: "/assets/images/rooms/dsc1423.jpg", alt: 'Suite Vue Piscine – photo 2' },
-  { id: 'svp-img-3', src: "/assets/images/rooms/dsc1424.jpg", alt: 'Suite Vue Piscine – photo 3' },
-  { id: 'svp-img-4', src: "/assets/images/rooms/dsc1425.jpg", alt: 'Suite Vue Piscine – photo 4' },
-  { id: 'svp-img-5', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Vue Piscine – photo 5' },
-  { id: 'svp-img-6', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Vue Piscine – photo 6' },
-  { id: 'svp-img-7', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Vue Piscine – photo 7' },
-  { id: 'svp-img-8', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Vue Piscine – photo 8' },
-  { id: 'svp-img-9', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Vue Piscine – photo 9' },
-  { id: 'svp-img-10', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Vue Piscine – photo 10' }],
+  { id: 'jvj-img-1', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Suite Junior Vue Jardin – photo 1' },
+  { id: 'jvj-img-2', src: "/assets/images/rooms/dsc1423.jpg", alt: 'Suite Junior Vue Jardin – photo 2' },
+  { id: 'jvj-img-3', src: "/assets/images/rooms/dsc1424.jpg", alt: 'Suite Junior Vue Jardin – photo 3' },
+  { id: 'jvj-img-4', src: "/assets/images/rooms/dsc1425.jpg", alt: 'Suite Junior Vue Jardin – photo 4' },
+  { id: 'jvj-img-5', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Junior Vue Jardin – photo 5' },
+  { id: 'jvj-img-6', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Junior Vue Jardin – photo 6' },
+  { id: 'jvj-img-7', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Junior Vue Jardin – photo 7' },
+  { id: 'jvj-img-8', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Junior Vue Jardin – photo 8' },
+  { id: 'jvj-img-9', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Junior Vue Jardin – photo 9' },
+  { id: 'jvj-img-10', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Junior Vue Jardin – photo 10' }],
   amenities: baseAmenities
 }];
 
@@ -190,7 +174,7 @@ export default function RoomsList() {
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-3">Nos hébergements</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Choisissez votre chambre</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            De la Chambre Double Standard à la Suite Vue Piscine, chaque catégorie est disponible en occupation single ou double.
+            De la Chambre Double Standard à la Suite Junior Vue Jardin, chaque catégorie est disponible en occupation single ou double.
           </p>
         </div>
 

@@ -11,8 +11,7 @@ const amenities = [
   { key: 'ra-roomservice', icon: Phone, label: 'Room service', desc: 'Service en chambre' },
   { key: 'ra-bed', icon: BedDouble, label: 'Literie premium', desc: 'Confort optimal' },
   { key: 'ra-shuttle', icon: Car, label: 'Navette', desc: 'Aéroport sur demande' },
-  { key: 'ra-fitness', icon: Dumbbell, label: 'Fitness', desc: 'Accès inclus' },
-  { key: 'ra-pool', icon: Waves, label: 'Piscines', desc: 'Extérieure & intérieure' },
+  { key: 'ra-pool', icon: Waves, label: 'Piscine', desc: 'Piscine extérieure' },
   { key: 'ra-spa', icon: Sparkles, label: 'Spa & Hammam', desc: 'Accès aux installations' },
 ];
 

@@ -26,7 +26,7 @@ export default function SpaBookingCTA() {
             Réserver un soin
           </Link>
           <a
-            href="https://wa.me/212528381919?text=Bonjour%2C+je+souhaite+r%C3%A9server+un+soin+au+spa."
+            href="https://wa.me/212666262244?text=Bonjour%2C+je+souhaite+r%C3%A9server+un+soin+au+spa."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline text-base py-3.5 px-8">

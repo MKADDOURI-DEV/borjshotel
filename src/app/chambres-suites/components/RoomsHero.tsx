@@ -20,7 +20,7 @@ export default function RoomsHero() {
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-3">Hébergement</p>
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-3">Chambres & Suites</h1>
           <p className="text-white/75 text-lg max-w-xl">
-            48 chambres et suites spacieuses alliant confort moderne et hospitalité marocaine.
+            121 chambres et suites spacieuses alliant confort moderne et hospitalité marocaine.
           </p>
         </div>
       </div>

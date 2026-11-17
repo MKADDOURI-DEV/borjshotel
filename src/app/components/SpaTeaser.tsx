@@ -24,7 +24,7 @@ export default function SpaTeaser() {
               Un moment<br />pour vous
             </h2>
             <p className="text-white/75 text-lg leading-relaxed mb-8">
-              Plongez dans un univers de détente absolue. Notre spa traditionnel marocain propose hammam, massages thérapeutiques, sauna, soins de beauté et piscine intérieure chauffée.
+              Plongez dans un univers de détente absolue. Notre spa traditionnel marocain propose hammam, massages thérapeutiques et soins de beauté.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/spa-bien-tre" className="btn-primary text-base py-3.5 px-8">

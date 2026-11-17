@@ -45,8 +45,11 @@ export default function ContactInfo() {
           </div>
           <div>
             <p className="font-semibold text-foreground mb-2">Email</p>
-            <a href="mailto:contact@borjshotelagadir.com" className="text-primary text-sm font-semibold hover:text-accent transition-colors">
-              contact@borjshotelagadir.com
+            <a href="mailto:Reservation@borjshotelagadir.com" className="block text-primary text-sm font-semibold hover:text-accent transition-colors">
+              Reservation@borjshotelagadir.com
+            </a>
+            <a href="mailto:Commercial@borjshotelagadir.com" className="block text-primary text-sm font-semibold hover:text-accent transition-colors mt-1">
+              Commercial@borjshotelagadir.com
             </a>
           </div>
         </div>
@@ -67,7 +70,7 @@ export default function ContactInfo() {
 
       {/* WhatsApp */}
       <a
-        href="https://wa.me/212528381919?text=Bonjour%2C+je+souhaite+obtenir+des+informations."
+        href="https://wa.me/212666262244?text=Bonjour%2C+je+souhaite+obtenir+des+informations."
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-4 bg-green-50 border border-green-200 rounded-2xl p-6 hover:bg-green-100 transition-colors group"

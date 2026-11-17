@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wifi, Clock, ShoppingBag, Car, UtensilsCrossed, Wine, Sparkles, Waves, Coffee, Wind, Tv, Package, Lock, Home, Dumbbell } from 'lucide-react';
+import { Wifi, Clock, ShoppingBag, Car, UtensilsCrossed, Wine, Sparkles, Waves, Coffee, Wind, Tv, Package, Lock, Home } from 'lucide-react';
 
 const services = [
   { key: 'svc-wifi', icon: Wifi, title: 'Wi-Fi gratuit', desc: 'Connexion haut débit dans tout l\'établissement' },
@@ -10,14 +10,13 @@ const services = [
   { key: 'svc-restaurant', icon: UtensilsCrossed, title: '3 Restaurants', desc: 'Cuisine marocaine et méditerranéenne' },
   { key: 'svc-bar', icon: Wine, title: 'Rooftop Bar', desc: 'Cocktails avec vue panoramique' },
   { key: 'svc-spa', icon: Sparkles, title: 'Spa & Hammam', desc: 'Soins traditionnels marocains' },
-  { key: 'svc-pool', icon: Waves, title: 'Piscines', desc: 'Extérieure et intérieure chauffée' },
+  { key: 'svc-pool', icon: Waves, title: 'Piscine', desc: 'Piscine extérieure avec transats' },
   { key: 'svc-breakfast', icon: Coffee, title: 'Petit-déjeuner', desc: 'Buffet avec produits locaux frais' },
   { key: 'svc-ac', icon: Wind, title: 'Climatisation', desc: 'Contrôle individuel en chambre' },
   { key: 'svc-tv', icon: Tv, title: 'TV satellite', desc: 'Chaînes internationales' },
   { key: 'svc-minibar', icon: Package, title: 'Minibar', desc: 'Rafraîchissements en chambre' },
   { key: 'svc-safe', icon: Lock, title: 'Coffre-fort', desc: 'Sécurité de vos objets de valeur' },
   { key: 'svc-terrace', icon: Home, title: 'Terrasse privée', desc: 'Balcon ou terrasse dans chaque chambre' },
-  { key: 'svc-fitness', icon: Dumbbell, title: 'Salle de fitness', desc: 'Équipements modernes' },
 ];
 
 export default function ServicesGrid() {
