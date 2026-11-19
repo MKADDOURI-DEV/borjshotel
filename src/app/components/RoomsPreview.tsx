@@ -11,59 +11,59 @@ const rooms = [
   subtitle: 'Chambre',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  description: 'Chambre confortable alliant décoration marocaine et équipements modernes.',
+  description: 'Un cocon de confort aux touches marocaines.',
   image: "/assets/images/rooms/dsc1467.jpg",
   alt: 'Chambre Standard – Borj Hôtel Agadir',
   badge: null,
   view: 'Selon disponibilité'
 },
 {
-  id: 'chambre-deluxe-vue-mer-piscine',
-  type: 'Chambre Deluxe Vue Mer et Piscine',
+  id: 'chambre-deluxe-vue-mer',
+  type: 'Chambre Deluxe Vue Mer',
   subtitle: 'Chambre',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  description: 'Chambre raffinée avec vue sur la mer et la piscine.',
+  description: 'Raffinement marocain et vue sur l\'horizon.',
   image: "/assets/images/rooms/dsc1460.jpg",
-  alt: 'Chambre Deluxe Vue Mer et Piscine – Borj Hôtel Agadir',
-  badge: 'Vue mer & piscine',
-  view: 'Vue sur la mer et la piscine'
+  alt: 'Chambre Deluxe Vue Mer – Borj Hôtel Agadir',
+  badge: 'Vue mer',
+  view: 'Vue sur la mer'
 },
 {
-  id: 'suite-junior-vue-jardin',
-  type: 'Suite Junior Vue Jardin',
+  id: 'suite-prestige-vue-mer',
+  type: 'Suite Prestige Vue Mer',
   subtitle: 'Suite',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  description: 'Plus d\'espace et de confort, avec vue sur le jardin.',
-  image: "/assets/images/rooms/dsc1447.jpg",
-  alt: 'Suite Junior Vue Jardin – Borj Hôtel Agadir',
-  badge: 'Vue jardin',
-  view: 'Vue sur le jardin'
-},
-{
-  id: 'suite-senior-vue-piscine',
-  type: 'Suite Senior Vue Piscine',
-  subtitle: 'Suite',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  description: 'Suite spacieuse avec vue sur la piscine.',
-  image: "/assets/images/rooms/dsc1437.jpg",
-  alt: 'Suite Senior Vue Piscine – Borj Hôtel Agadir',
-  badge: 'Vue piscine',
-  view: 'Vue sur la piscine'
-},
-{
-  id: 'suite-prestige-vue-mer-piscine',
-  type: 'Suite Prestige Vue Mer et Piscine',
-  subtitle: 'Suite',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  description: 'Notre catégorie la plus haut de gamme, vue mer et piscine.',
+  description: 'Le caractère exclusif de la tradition marocaine, vue mer.',
   image: "/assets/images/rooms/dsc1422.jpg",
-  alt: 'Suite Prestige Vue Mer et Piscine – Borj Hôtel Agadir',
+  alt: 'Suite Prestige Vue Mer – Borj Hôtel Agadir',
   badge: 'Prestige',
-  view: 'Vue sur la mer et la piscine'
+  view: 'Vue sur la mer'
+},
+{
+  id: 'suite-senior',
+  type: 'Suite Senior',
+  subtitle: 'Suite',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  description: 'Volumes généreux, décor artisanal et confort moderne.',
+  image: "/assets/images/rooms/dsc1437.jpg",
+  alt: 'Suite Senior – Borj Hôtel Agadir',
+  badge: 'Suite',
+  view: 'Selon disponibilité'
+},
+{
+  id: 'suite-junior',
+  type: 'Suite Junior',
+  subtitle: 'Suite',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  description: 'Chambre et salon dans une ambiance marocaine intimiste.',
+  image: "/assets/images/rooms/dsc1447.jpg",
+  alt: 'Suite Junior – Borj Hôtel Agadir',
+  badge: 'Suite',
+  view: 'Selon disponibilité'
 }];
 
 

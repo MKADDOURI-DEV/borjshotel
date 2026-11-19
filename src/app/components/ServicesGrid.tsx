@@ -1,20 +1,20 @@
 import React from 'react';
-import { Wifi, Clock, ShoppingBag, Car, UtensilsCrossed, Wine, Sparkles, Waves, Coffee, Wind, Tv, Package, Lock, Home } from 'lucide-react';
+import { Wifi, Clock, ShoppingBag, Car, UtensilsCrossed, Wine, Sparkles, Waves, Coffee, ParkingCircle, Presentation, Wind, Tv, Lock, Home } from 'lucide-react';
 
 const services = [
   { key: 'svc-wifi', icon: Wifi, title: 'Wi-Fi gratuit', desc: 'Connexion haut débit dans tout l\'établissement' },
   { key: 'svc-reception', icon: Clock, title: 'Réception 24h/24', desc: 'Équipe disponible à toute heure' },
   { key: 'svc-roomservice', icon: ShoppingBag, title: 'Room service', desc: 'Service en chambre disponible' },
-  { key: 'svc-laundry', icon: Package, title: 'Blanchisserie', desc: 'Service de pressing et lavage' },
   { key: 'svc-shuttle', icon: Car, title: 'Navette aéroport', desc: 'Transferts sur demande' },
-  { key: 'svc-restaurant', icon: UtensilsCrossed, title: '3 Restaurants', desc: 'Cuisine marocaine et méditerranéenne' },
+  { key: 'svc-restaurant', icon: UtensilsCrossed, title: '2 Restaurants', desc: 'Restaurant marocain et restaurant international' },
   { key: 'svc-bar', icon: Wine, title: 'Rooftop Bar', desc: 'Cocktails avec vue panoramique' },
   { key: 'svc-spa', icon: Sparkles, title: 'Spa & Hammam', desc: 'Soins traditionnels marocains' },
   { key: 'svc-pool', icon: Waves, title: 'Piscine', desc: 'Piscine extérieure avec transats' },
-  { key: 'svc-breakfast', icon: Coffee, title: 'Petit-déjeuner', desc: 'Buffet avec produits locaux frais' },
+  { key: 'svc-parking', icon: ParkingCircle, title: 'Parking', desc: 'Extérieur et en sous-sol' },
+  { key: 'svc-meeting', icon: Presentation, title: 'Salle de réunion', desc: 'Espace professionnel' },
   { key: 'svc-ac', icon: Wind, title: 'Climatisation', desc: 'Contrôle individuel en chambre' },
   { key: 'svc-tv', icon: Tv, title: 'TV satellite', desc: 'Chaînes internationales' },
-  { key: 'svc-minibar', icon: Package, title: 'Minibar', desc: 'Rafraîchissements en chambre' },
+  { key: 'svc-minibar', icon: Coffee, title: 'Minibar', desc: 'Rafraîchissements en chambre' },
   { key: 'svc-safe', icon: Lock, title: 'Coffre-fort', desc: 'Sécurité de vos objets de valeur' },
   { key: 'svc-terrace', icon: Home, title: 'Terrasse privée', desc: 'Balcon ou terrasse dans chaque chambre' },
 ];

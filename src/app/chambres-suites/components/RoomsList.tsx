@@ -23,7 +23,7 @@ const rooms = [
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
   view: 'Selon disponibilité',
-  description: 'Chambre confortable et soigneusement aménagée, alliant décoration marocaine et équipements modernes pour un séjour reposant à Agadir. Disponible en occupation single ou double.',
+  description: 'Pensée comme un cocon de confort, la Chambre Standard allie lignes épurées et touches d\'inspiration marocaine : tissus aux motifs traditionnels, tons chaleureux et équipements modernes pour un séjour reposant au cœur d\'Agadir. Disponible en occupation single ou double.',
   images:
   [
   { id: 'std-img-1', src: "/assets/images/rooms/dsc1467.jpg", alt: 'Chambre Standard – photo 1' },
@@ -31,77 +31,77 @@ const rooms = [
   amenities: baseAmenities
 },
 {
-  id: 'chambre-deluxe-vue-mer-piscine',
-  type: 'Chambre Deluxe Vue Mer et Piscine',
-  badge: 'Vue mer & piscine',
+  id: 'chambre-deluxe-vue-mer',
+  type: 'Chambre Deluxe Vue Mer',
+  badge: 'Vue mer',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  view: 'Vue sur la mer et la piscine',
-  description: 'Chambre Deluxe spacieuse et raffinée, avec vue sur la mer et la piscine. Disponible en occupation single ou double.',
+  view: 'Vue sur la mer',
+  description: 'La Chambre Deluxe Vue Mer s\'ouvre sur l\'horizon atlantique. Entre linge de lit soigné, décor chaleureux d\'inspiration marocaine et balcon tourné vers la mer, elle offre un art de vivre à la fois raffiné et authentique. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'dlx-img-1', src: "/assets/images/rooms/dsc1460.jpg", alt: 'Chambre Deluxe Vue Mer et Piscine – photo 1' },
-  { id: 'dlx-img-2', src: "/assets/images/hotel/dsc1450.jpg", alt: 'Chambre Deluxe Vue Mer et Piscine – photo 2' }],
+  { id: 'dlx-img-1', src: "/assets/images/rooms/dsc1460.jpg", alt: 'Chambre Deluxe Vue Mer – photo 1' },
+  { id: 'dlx-img-2', src: "/assets/images/hotel/dsc1450.jpg", alt: 'Chambre Deluxe Vue Mer – photo 2' }],
   amenities: baseAmenities
 },
 {
-  id: 'suite-junior-vue-jardin',
-  type: 'Suite Junior Vue Jardin',
-  badge: 'Vue jardin',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  view: 'Vue sur le jardin',
-  description: 'Suite Junior avec vue sur le jardin de l\'hôtel, offrant plus d\'espace et de confort pour un séjour au calme. Disponible en occupation single ou double.',
-  images:
-  [
-  { id: 'jun-img-1', src: "/assets/images/rooms/dsc1447.jpg", alt: 'Suite Junior Vue Jardin – photo 1' },
-  { id: 'jun-img-2', src: "/assets/images/rooms/dsc1445.jpg", alt: 'Suite Junior Vue Jardin – photo 2' },
-  { id: 'jun-img-3', src: "/assets/images/rooms/dsc1446.jpg", alt: 'Suite Junior Vue Jardin – photo 3' },
-  { id: 'jun-img-4', src: "/assets/images/rooms/dsc1463.jpg", alt: 'Suite Junior Vue Jardin – photo 4' }],
-  amenities: baseAmenities
-},
-{
-  id: 'suite-senior-vue-piscine',
-  type: 'Suite Senior Vue Piscine',
-  badge: 'Vue piscine',
-  occupancy: 'Single : 1 pers. · Double : 2 pers.',
-  bed: 'Single ou double',
-  view: 'Vue sur la piscine',
-  description: 'Suite Senior spacieuse avec vue sur la piscine, pensée pour les voyageurs qui recherchent un confort supérieur. Disponible en occupation single ou double.',
-  images:
-  [
-  { id: 'sen-img-1', src: "/assets/images/rooms/dsc1437.jpg", alt: 'Suite Senior Vue Piscine – photo 1' },
-  { id: 'sen-img-2', src: "/assets/images/rooms/dsc1435.jpg", alt: 'Suite Senior Vue Piscine – photo 2' },
-  { id: 'sen-img-3', src: "/assets/images/rooms/dsc1436.jpg", alt: 'Suite Senior Vue Piscine – photo 3' },
-  { id: 'sen-img-4', src: "/assets/images/rooms/dsc1438.jpg", alt: 'Suite Senior Vue Piscine – photo 4' },
-  { id: 'sen-img-5', src: "/assets/images/rooms/dsc1439.jpg", alt: 'Suite Senior Vue Piscine – photo 5' },
-  { id: 'sen-img-6', src: "/assets/images/rooms/dsc1440.jpg", alt: 'Suite Senior Vue Piscine – photo 6' },
-  { id: 'sen-img-7', src: "/assets/images/rooms/dsc1443.jpg", alt: 'Suite Senior Vue Piscine – photo 7' },
-  { id: 'sen-img-8', src: "/assets/images/rooms/dsc1444.jpg", alt: 'Suite Senior Vue Piscine – photo 8' }],
-  amenities: baseAmenities
-},
-{
-  id: 'suite-prestige-vue-mer-piscine',
-  type: 'Suite Prestige Vue Mer et Piscine',
+  id: 'suite-prestige-vue-mer',
+  type: 'Suite Prestige Vue Mer',
   badge: 'Prestige',
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
-  view: 'Vue sur la mer et la piscine',
-  description: 'Notre Suite Prestige avec vue sur la mer et la piscine, la catégorie la plus haut de gamme de l\'hôtel. Disponible en occupation single ou double.',
+  view: 'Vue sur la mer',
+  description: 'Notre Suite Prestige est le joyau de l\'hôtel. Salon lumineux, boiseries et détails inspirés de l\'artisanat marocain, finitions soignées et vue sur la mer : chaque espace célèbre l\'élégance de la tradition marocaine, associée à un confort moderne exclusif. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'pre-img-1', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 1' },
-  { id: 'pre-img-2', src: "/assets/images/rooms/dsc1423.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 2' },
-  { id: 'pre-img-3', src: "/assets/images/rooms/dsc1424.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 3' },
-  { id: 'pre-img-4', src: "/assets/images/rooms/dsc1425.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 4' },
-  { id: 'pre-img-5', src: "/assets/images/rooms/dsc1453.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 5' },
-  { id: 'pre-img-6', src: "/assets/images/rooms/dsc1449.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 6' },
-  { id: 'pre-img-7', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 7' },
-  { id: 'pre-img-8', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 8' },
-  { id: 'pre-img-9', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 9' },
-  { id: 'pre-img-10', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 10' },
-  { id: 'pre-img-11', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 11' },
-  { id: 'pre-img-12', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Prestige Vue Mer et Piscine – photo 12' }],
+  { id: 'pre-img-1', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Suite Prestige Vue Mer – photo 1' },
+  { id: 'pre-img-2', src: "/assets/images/rooms/dsc1423.jpg", alt: 'Suite Prestige Vue Mer – photo 2' },
+  { id: 'pre-img-3', src: "/assets/images/rooms/dsc1424.jpg", alt: 'Suite Prestige Vue Mer – photo 3' },
+  { id: 'pre-img-4', src: "/assets/images/rooms/dsc1425.jpg", alt: 'Suite Prestige Vue Mer – photo 4' },
+  { id: 'pre-img-5', src: "/assets/images/rooms/dsc1453.jpg", alt: 'Suite Prestige Vue Mer – photo 5' },
+  { id: 'pre-img-6', src: "/assets/images/rooms/dsc1449.jpg", alt: 'Suite Prestige Vue Mer – photo 6' },
+  { id: 'pre-img-7', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Prestige Vue Mer – photo 7' },
+  { id: 'pre-img-8', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Prestige Vue Mer – photo 8' },
+  { id: 'pre-img-9', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Prestige Vue Mer – photo 9' },
+  { id: 'pre-img-10', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Prestige Vue Mer – photo 10' },
+  { id: 'pre-img-11', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Prestige Vue Mer – photo 11' },
+  { id: 'pre-img-12', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Prestige Vue Mer – photo 12' }],
+  amenities: baseAmenities
+},
+{
+  id: 'suite-senior',
+  type: 'Suite Senior',
+  badge: 'Suite',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  view: 'Selon disponibilité',
+  description: 'La Suite Senior déploie de généreux volumes autour d\'un salon aux banquettes bleues et d\'une chambre aux boiseries sculptées. Décoration traditionnelle marocaine, motifs artisanaux et finitions raffinées y rencontrent le confort moderne. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'sen-img-1', src: "/assets/images/rooms/dsc1437.jpg", alt: 'Suite Senior – photo 1' },
+  { id: 'sen-img-2', src: "/assets/images/rooms/dsc1435.jpg", alt: 'Suite Senior – photo 2' },
+  { id: 'sen-img-3', src: "/assets/images/rooms/dsc1436.jpg", alt: 'Suite Senior – photo 3' },
+  { id: 'sen-img-4', src: "/assets/images/rooms/dsc1438.jpg", alt: 'Suite Senior – photo 4' },
+  { id: 'sen-img-5', src: "/assets/images/rooms/dsc1439.jpg", alt: 'Suite Senior – photo 5' },
+  { id: 'sen-img-6', src: "/assets/images/rooms/dsc1440.jpg", alt: 'Suite Senior – photo 6' },
+  { id: 'sen-img-7', src: "/assets/images/rooms/dsc1443.jpg", alt: 'Suite Senior – photo 7' },
+  { id: 'sen-img-8', src: "/assets/images/rooms/dsc1444.jpg", alt: 'Suite Senior – photo 8' }],
+  amenities: baseAmenities
+},
+{
+  id: 'suite-junior',
+  type: 'Suite Junior',
+  badge: 'Suite',
+  occupancy: 'Single : 1 pers. · Double : 2 pers.',
+  bed: 'Single ou double',
+  view: 'Selon disponibilité',
+  description: 'La Suite Junior réunit chambre et espace salon dans une atmosphère chaleureuse. Tissus traditionnels, détails d\'inspiration artisanale et ambiance intimiste composent un refuge élégant où tradition marocaine et confort moderne se répondent. Disponible en occupation single ou double.',
+  images:
+  [
+  { id: 'jun-img-1', src: "/assets/images/rooms/dsc1447.jpg", alt: 'Suite Junior – photo 1' },
+  { id: 'jun-img-2', src: "/assets/images/rooms/dsc1445.jpg", alt: 'Suite Junior – photo 2' },
+  { id: 'jun-img-3', src: "/assets/images/rooms/dsc1446.jpg", alt: 'Suite Junior – photo 3' },
+  { id: 'jun-img-4', src: "/assets/images/rooms/dsc1463.jpg", alt: 'Suite Junior – photo 4' }],
   amenities: baseAmenities
 }];
 
@@ -164,7 +164,7 @@ export default function RoomsList() {
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-3">Nos hébergements</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">Choisissez votre chambre</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            De la Chambre Standard à la Suite Prestige, chaque catégorie est disponible en occupation single ou double.
+            De la Chambre Standard à la Suite Prestige Vue Mer, chaque catégorie est disponible en occupation single ou double.
           </p>
         </div>
 

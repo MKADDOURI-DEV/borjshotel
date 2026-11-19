@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import AppLogo from '@/components/ui/AppLogo';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { SOCIAL_LINKS, WHATSAPP_URL } from '@/lib/config';
 
 const InstagramIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -66,8 +67,9 @@ export default function SiteFooter() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <a
-                href="https://www.instagram.com/"
+              {SOCIAL_LINKS.instagram && (
+<a
+                href={SOCIAL_LINKS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors"
@@ -75,8 +77,10 @@ export default function SiteFooter() {
               >
                 <InstagramIcon />
               </a>
-              <a
-                href="https://www.facebook.com/"
+)}
+              {SOCIAL_LINKS.facebook && (
+<a
+                href={SOCIAL_LINKS.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors"
@@ -84,8 +88,9 @@ export default function SiteFooter() {
               >
                 <FacebookIcon />
               </a>
+)}
               <a
-                href="https://wa.me/212666262244"
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors"

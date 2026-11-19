@@ -10,7 +10,7 @@ export default function RoomsHero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-center"
         unoptimized />
       
       <div className="absolute inset-0 hero-overlay" />

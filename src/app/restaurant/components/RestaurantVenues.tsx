@@ -1,31 +1,31 @@
 import React from 'react';
 import AppImage from '@/components/ui/AppImage';
-import { UtensilsCrossed, Coffee, Sunset, MapPin } from 'lucide-react';
+import { UtensilsCrossed, Globe, Sunset, MapPin } from 'lucide-react';
 
 // BACKEND INTEGRATION: Venue content should be editable from admin panel / CMS
 const venues = [
 {
-  id: 'venue-principal',
-  icon: UtensilsCrossed,
-  name: 'Restaurant Marocain',
-  tagline: 'Notre spécialité · Cuisine marocaine authentique',
-  description: 'Notre restaurant marocain est le cœur de la table du Borjs Hotel. Dans un cadre élégant et chaleureux, découvrez les saveurs authentiques de la cuisine marocaine traditionnelle, préparées avec des ingrédients locaux frais sélectionnés chaque jour.',
-  cuisines: ['Cuisine marocaine', 'Spécialités traditionnelles', 'Produits frais locaux'],
-  meals: ['Déjeuner', 'Dîner'],
-  image: "/assets/images/restaurant/dsc1481.jpg",
-  alt: 'Restaurant marocain de l\'hôtel Borjs avec décoration marocaine, tables dressées et ambiance chaleureuse',
+  id: 'venue-international',
+  icon: Globe,
+  name: 'Restaurant International',
+  tagline: 'Une table ouverte sur le monde',
+  description: 'Installé à la place de l\'ancienne salle du petit-déjeuner, le Restaurant International vous accueille dans une salle lumineuse et élégante pour une cuisine internationale, du matin jusque tard le soir.',
+  cuisines: ['Cuisine internationale'],
+  meals: ['Ouvert de 07h00 à 00h00'],
+  image: "/assets/images/restaurant/dsc1473.jpg",
+  alt: 'Restaurant international de l\'hôtel Borjs : salle élégante aux tables dressées',
   location: 'Rez-de-chaussée'
 },
 {
-  id: 'venue-breakfast',
-  icon: Coffee,
-  name: 'Salle du Petit-Déjeuner',
-  tagline: 'Buffet Généreux chaque matin',
-  description: 'Commencez votre journée agadirienne avec notre buffet petit-déjeuner généreux. Viennoiseries fraîches, fruits de saison, jus pressés, fromages locaux, œufs préparés à votre convenance et spécialités marocaines traditionnelles.',
-  cuisines: ['Buffet continental', 'Spécialités marocaines', 'Produits frais locaux'],
-  meals: ['Petit-déjeuner'],
-  image: "/assets/images/restaurant/dsc1475.jpg",
-  alt: 'Buffet petit-déjeuner généreux avec viennoiseries fraîches, fruits et spécialités marocaines',
+  id: 'venue-marocain',
+  icon: UtensilsCrossed,
+  name: 'Restaurant Marocain',
+  tagline: 'Notre spécialité · Cuisine marocaine authentique',
+  description: 'Au cœur de la table du Borjs Hotel, le Restaurant Marocain célèbre la cuisine traditionnelle dans un cadre chaleureux : saveurs authentiques, spécialités du terroir et art de recevoir à la marocaine.',
+  cuisines: ['Cuisine marocaine traditionnelle', 'Spécialités marocaines'],
+  meals: ['Ouvert de 10h00 à 01h00'],
+  image: "/assets/images/restaurant/dsc1481.jpg",
+  alt: 'Restaurant marocain de l\'hôtel Borjs avec décoration marocaine, tables dressées et ambiance chaleureuse',
   location: 'Rez-de-chaussée'
 },
 {
@@ -33,11 +33,11 @@ const venues = [
   icon: Sunset,
   name: 'Rooftop Bar & Lounge',
   tagline: 'Vue panoramique sur la baie d\'Agadir',
-  description: 'Culminez votre journée au Rooftop Bar avec une vue à couper le souffle sur la baie d\'Agadir et le coucher de soleil atlantique. Cocktails créatifs, vins sélectionnés et petites bouchées légères dans une atmosphère lounge unique.',
-  cuisines: ['Cocktails', 'Vins & Boissons', 'Bouchées légères', 'Snacks'],
-  meals: ['Ouvert de 14h à 02h', 'Apéritif', 'Soirée'],
+  description: 'Le Rooftop Bar vous offre une vue panoramique sur la baie d\'Agadir. Un lieu pour vos fins de journée et vos soirées.',
+  cuisines: ['Cocktails', 'Boissons'],
+  meals: ['Ouvert de 14h00 à 02h00'],
   image: "/assets/images/pool/dsc1500.jpg",
-  alt: 'Rooftop bar avec vue panoramique sur la baie d\'Agadir au coucher du soleil',
+  alt: 'Rooftop bar avec vue panoramique sur la baie d\'Agadir',
   location: 'Rooftop'
 }];
 
@@ -50,10 +50,10 @@ export default function RestaurantVenues() {
           <div className="gold-divider mx-auto mb-6" />
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-3">Nos espaces</p>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            3 espaces de restauration
+            Nos espaces de restauration
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Du petit-déjeuner au dîner, en passant par le rooftop au coucher du soleil, chaque repas est une expérience.
+            Un restaurant international, un restaurant marocain et un rooftop bar : chaque repas est une expérience.
           </p>
         </div>
 
@@ -105,7 +105,7 @@ export default function RestaurantVenues() {
 
                 {/* Meals */}
                 <div className="mb-6">
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Services</p>
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Horaires</p>
                   <div className="flex flex-wrap gap-2">
                     {venue?.meals?.map((m) =>
                   <span key={`${venue?.id}-meal-${m}`} className="px-3 py-1.5 bg-primary/10 rounded-full text-sm font-semibold text-primary">

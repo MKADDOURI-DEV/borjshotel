@@ -3,34 +3,9 @@ import { Clock } from 'lucide-react';
 
 // BACKEND INTEGRATION: Opening hours should be editable from admin panel
 const openingHours = [
-  {
-    id: 'hours-breakfast',
-    venue: 'Petit-Déjeuner',
-    schedule: [
-      { key: 'breakfast-daily', days: 'Tous les jours', hours: '07h00 – 10h30' },
-    ],
-  },
-  {
-    id: 'hours-lunch',
-    venue: 'Déjeuner',
-    schedule: [
-      { key: 'lunch-daily', days: 'Tous les jours', hours: '12h00 – 15h00' },
-    ],
-  },
-  {
-    id: 'hours-dinner',
-    venue: 'Dîner',
-    schedule: [
-      { key: 'dinner-daily', days: 'Tous les jours', hours: '19h00 – 00h00' },
-    ],
-  },
-  {
-    id: 'hours-rooftop',
-    venue: 'Rooftop Bar',
-    schedule: [
-      { key: 'rooftop-daily', days: 'Tous les jours', hours: '14h00 – 02h00' },
-    ],
-  },
+  { id: 'hours-international', venue: 'Restaurant International', schedule: [{ key: 'intl-daily', days: 'Tous les jours', hours: '07h00 – 00h00' }] },
+  { id: 'hours-marocain', venue: 'Restaurant Marocain', schedule: [{ key: 'maroc-daily', days: 'Tous les jours', hours: '10h00 – 01h00' }] },
+  { id: 'hours-rooftop', venue: 'Rooftop Bar', schedule: [{ key: 'rooftop-daily', days: 'Tous les jours', hours: '14h00 – 02h00' }] },
 ];
 
 export default function RestaurantHours() {
@@ -48,7 +23,7 @@ export default function RestaurantHours() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {openingHours?.map((item) => (
             <div key={item?.id} className="bg-card border border-border rounded-2xl p-6 text-center hover:border-accent/40 hover:shadow-card transition-all">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">

@@ -5,12 +5,12 @@ export default function SpaHero() {
   return (
     <section className="relative h-[60vh] min-h-[450px] overflow-hidden">
       <AppImage
-        src="/assets/images/spa/dsc1406.jpg"
-        alt="Espace spa luxueux avec hammam traditionnel marocain, lumières tamisées et ambiance de détente"
+        src="/assets/images/spa/dsc1399.jpg"
+        alt="Salle de massage du spa aux alcôves marocaines éclairées de bougies, ambiance chaleureuse de détente"
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-center"
         unoptimized />
       
       <div className="absolute inset-0 hero-overlay" />

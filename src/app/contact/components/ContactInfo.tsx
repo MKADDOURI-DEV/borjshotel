@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
+import { WHATSAPP_URL, MOBILE_DISPLAY } from '@/lib/config';
 
 export default function ContactInfo() {
   return (
@@ -30,9 +31,19 @@ export default function ContactInfo() {
           </div>
           <div>
             <p className="font-semibold text-foreground mb-2">Téléphone</p>
+            <p className="text-muted-foreground text-xs mb-0.5">Fixe</p>
             <a href="tel:+212528381919" className="text-primary font-bold text-lg hover:text-accent transition-colors">
               +212 528 381 919
             </a>
+            <p className="text-muted-foreground text-xs mt-3 mb-0.5">Mobile / WhatsApp</p>
+            <a href="tel:+212666262244" className="text-primary font-bold text-lg hover:text-accent transition-colors">
+              {MOBILE_DISPLAY}
+            </a>
+            <div className="mt-4">
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 text-sm py-2.5 px-5">
+                <MessageCircle size={16} /> Écrire sur WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </div>

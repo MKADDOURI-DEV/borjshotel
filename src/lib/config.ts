@@ -29,3 +29,20 @@ export function buildBookingUrl(params?: {
   }
   return `${BOOKING_URL}${BOOKING_URL.includes('?') ? '&' : '?'}${pairs.join('&')}`;
 }
+
+/** Réseaux sociaux : renseigner l'URL EXACTE de la page officielle (jamais la page d'accueil du réseau).
+ *  Une icône n'est affichée dans le footer que si son URL est renseignée. */
+export const SOCIAL_LINKS = {
+  instagram: '',
+  facebook: '',
+};
+
+export const WHATSAPP_NUMBER = '212666262244';
+export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
+export const MOBILE_DISPLAY = '06 66 26 22 44';
+
+/** Salle de réunion : ajouter ici les photos et infos quand elles seront fournies. */
+export const MEETING_ROOM: { photos: { src: string; alt: string }[]; details: string[] } = {
+  photos: [],
+  details: [],
+};

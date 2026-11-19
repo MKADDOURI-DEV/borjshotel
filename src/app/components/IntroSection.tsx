@@ -6,7 +6,7 @@ const benefits = [
 { key: 'benefit-suites', icon: BedDouble, label: 'Chambres & suites', desc: '121 chambres et suites' },
 { key: 'benefit-spa', icon: Sparkles, label: 'Spa & Bien-être', desc: 'Hammam et massages' },
 { key: 'benefit-pool', icon: Waves, label: 'Piscine', desc: 'Piscine extérieure' },
-{ key: 'benefit-restaurant', icon: UtensilsCrossed, label: 'Restaurants', desc: '3 restaurants sur place' },
+{ key: 'benefit-restaurant', icon: UtensilsCrossed, label: 'Restaurants', desc: 'Marocain et international' },
 { key: 'benefit-wifi', icon: Wifi, label: 'Wi-Fi gratuit', desc: 'Dans tout l\'hôtel' },
 { key: 'benefit-reception', icon: Clock, label: 'Réception 24h/24', desc: 'À votre service' }];
 
@@ -58,7 +58,7 @@ export default function IntroSection() {
               Niché au cœur de la Cité Baie des Palmiers à Agadir, le Borjs Hotel Suites & Spa est un havre de sérénité alliant architecture marocaine authentique et confort moderne.
             </p>
             <p className="text-muted-foreground text-base leading-relaxed mb-8">
-              À seulement 10 minutes à pied de la plage d&apos;Agadir, notre établissement 4 étoiles vous propose 121 chambres et suites, un restaurant marocain (petit-déjeuner, déjeuner et dîner), une piscine extérieure, un spa traditionnel et un rooftop avec vue panoramique sur la baie.
+              À seulement 10 minutes à pied de la plage d&apos;Agadir, notre établissement 4 étoiles vous propose 121 chambres et suites, un restaurant marocain et un restaurant international, une piscine extérieure, un spa traditionnel et un rooftop avec vue panoramique sur la baie.
             </p>
 
             {/* Benefits grid */}

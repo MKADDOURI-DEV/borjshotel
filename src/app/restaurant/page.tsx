@@ -4,6 +4,7 @@ import SiteFooter from '@/components/SiteFooter';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import RestaurantHero from '@/app/restaurant/components/RestaurantHero';
 import RestaurantVenues from '@/app/restaurant/components/RestaurantVenues';
+import RestaurantMenu from '@/app/restaurant/components/RestaurantMenu';
 import RestaurantGallery from '@/app/restaurant/components/RestaurantGallery';
 import RestaurantHours from '@/app/restaurant/components/RestaurantHours';
 import RestaurantCTA from '@/app/restaurant/components/RestaurantCTA';
@@ -15,6 +16,7 @@ export default function RestaurantPage() {
       <main>
         <RestaurantHero />
         <RestaurantVenues />
+        <RestaurantMenu />
         <RestaurantGallery />
         <RestaurantHours />
         <RestaurantCTA />

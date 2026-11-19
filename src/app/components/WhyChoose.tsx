@@ -6,7 +6,7 @@ const advantages = [
 { key: 'adv-suites', icon: BedDouble, title: 'Suites spacieuses', desc: '121 chambres et suites jusqu\'à 58 m² pour votre confort.' },
 { key: 'adv-spa', icon: Sparkles, title: 'Spa traditionnel', desc: 'Hammam, massages et soins de beauté dans un cadre authentique.' },
 { key: 'adv-pool', icon: Waves, title: 'Piscine', desc: 'Piscine extérieure entourée de palmiers et de transats.' },
-{ key: 'adv-restaurant', icon: UtensilsCrossed, title: 'Gastronomie', desc: '3 restaurants avec cuisine marocaine et méditerranéenne.' },
+{ key: 'adv-restaurant', icon: UtensilsCrossed, title: 'Gastronomie', desc: 'Un restaurant marocain authentique et un restaurant international.' },
 { key: 'adv-hospitality', icon: Heart, title: 'Hospitalité marocaine', desc: 'Un accueil chaleureux et un service attentionné 24h/24.' },
 { key: 'adv-location', icon: MapPin, title: 'Emplacement idéal', desc: 'À 10 minutes de la plage d\'Agadir et des principales attractions.' }];
 

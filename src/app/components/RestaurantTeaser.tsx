@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import AppImage from '@/components/ui/AppImage';
-import { UtensilsCrossed, Coffee, Sunset } from 'lucide-react';
+import { UtensilsCrossed, Globe, Sunset } from 'lucide-react';
 
 const venues = [
-{ key: 'venue-main', icon: UtensilsCrossed, name: 'Restaurant Marocain', desc: 'Notre spécialité : une cuisine marocaine authentique dans un cadre élégant.' },
-{ key: 'venue-breakfast', icon: Coffee, name: 'Petit-déjeuner', desc: 'Buffet généreux avec produits locaux frais chaque matin.' },
+{ key: 'venue-international', icon: Globe, name: 'Restaurant International', desc: 'Cuisine internationale, de 07h00 à 00h00.' },
+{ key: 'venue-main', icon: UtensilsCrossed, name: 'Restaurant Marocain', desc: 'Notre spécialité : cuisine marocaine authentique, de 10h00 à 01h00.' },
 { key: 'venue-rooftop', icon: Sunset, name: 'Rooftop Bar', desc: 'Vues panoramiques sur la baie d\'Agadir, ouvert de 14h à 02h.' }];
 
 
