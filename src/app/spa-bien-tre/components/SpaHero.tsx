@@ -5,8 +5,8 @@ export default function SpaHero() {
   return (
     <section className="relative h-[60vh] min-h-[450px] overflow-hidden">
       <AppImage
-        src="/assets/images/spa/dsc1399.jpg"
-        alt="Salle de massage du spa aux alcôves marocaines éclairées de bougies, ambiance chaleureuse de détente"
+        src="/assets/images/spa/spa-new-10.jpg"
+        alt="Salle de massage du spa aux murs ocre décorés de motifs marocains, lanternes et pétales de rose"
         fill
         priority
         sizes="100vw"

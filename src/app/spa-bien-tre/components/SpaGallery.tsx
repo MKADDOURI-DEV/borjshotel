@@ -20,7 +20,20 @@ const spaImages = [
 { id: 'spa-g-17', src: "/assets/images/spa/dsc1406.jpg", alt: 'Cabine de massage avec niches et bougies', tall: false },
 { id: 'spa-g-18', src: "/assets/images/spa/dsc1407.jpg", alt: 'Bougies dans une niche du spa', tall: false },
 { id: 'spa-g-19', src: "/assets/images/spa/dsc1411.jpg", alt: 'Étagères de serviettes du spa', tall: false },
-{ id: 'spa-g-20', src: "/assets/images/spa/dsc1414.jpg", alt: 'Couloir du spa avec serviettes', tall: true }];
+{ id: 'spa-g-20', src: "/assets/images/spa/dsc1414.jpg", alt: 'Couloir du spa avec serviettes', tall: true },
+{ id: 'spa-n-1', src: "/assets/images/spa/spa-new-01.jpg", alt: 'Cabine de soins avec fauteuils et ambiance chaleureuse', tall: true },
+{ id: 'spa-n-2', src: "/assets/images/spa/spa-new-02.jpg", alt: 'Bougie et galets de massage', tall: true },
+{ id: 'spa-n-3', src: "/assets/images/spa/spa-new-03.jpg", alt: 'Couloir du spa éclairé aux lanternes', tall: true },
+{ id: 'spa-n-4', src: "/assets/images/spa/spa-new-04.jpg", alt: 'Lits de massage et serviettes en forme de cygnes', tall: false },
+{ id: 'spa-n-5', src: "/assets/images/spa/spa-new-05.jpg", alt: 'Serviette roulée sur lit de massage', tall: true },
+{ id: 'spa-n-6', src: "/assets/images/spa/spa-new-06.jpg", alt: 'Banquette du hammam en zellige', tall: false },
+{ id: 'spa-n-7', src: "/assets/images/spa/spa-new-07.jpg", alt: 'Plateau de soins sur banquette en mosaïque', tall: true },
+{ id: 'spa-n-8', src: "/assets/images/spa/spa-new-08.jpg", alt: 'Espace détente du spa', tall: true },
+{ id: 'spa-n-9', src: "/assets/images/spa/spa-new-09.jpg", alt: 'Cabine de massage individuelle', tall: true },
+{ id: 'spa-n-10', src: "/assets/images/spa/spa-new-10.jpg", alt: 'Salle de massage aux rideaux ocre', tall: false },
+{ id: 'spa-n-11', src: "/assets/images/spa/spa-new-11.jpg", alt: 'Salle de massage avec vue sur la ville', tall: false },
+{ id: 'spa-n-12', src: "/assets/images/spa/spa-new-12.jpg", alt: 'Bougie et galet sur serviette blanche', tall: true },
+];
 
 
 export default function SpaGallery() {
