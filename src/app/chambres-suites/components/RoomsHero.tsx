@@ -5,8 +5,8 @@ export default function RoomsHero() {
   return (
     <section className="relative h-[55vh] min-h-[400px] overflow-hidden">
       <AppImage
-        src="/assets/images/rooms/dsc1423.jpg"
-        alt="Chambre luxueuse de l'hôtel Borjs avec vue panoramique et décoration marocaine raffinée"
+        src="/assets/images/rooms/dsc1460.jpg"
+        alt="Chambre de l'hôtel Borjs avec balcon et vue sur la mer"
         fill
         priority
         sizes="100vw"

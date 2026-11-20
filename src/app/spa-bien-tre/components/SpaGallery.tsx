@@ -1,7 +1,6 @@
 'use client';
-import React, { useState } from 'react';
-import AppImage from '@/components/ui/AppImage';
-import { X } from 'lucide-react';
+import React from 'react';
+import PhotoGrid from '@/components/PhotoGrid';
 
 const spaImages = [
 { id: 'spa-g-1', src: "/assets/images/spa/dsc1384.jpg", alt: 'Hammam traditionnel avec banquette et fenêtre en arche', tall: true },
@@ -37,9 +36,6 @@ const spaImages = [
 
 
 export default function SpaGallery() {
-  const [lightbox, setLightbox] = useState<string | null>(null);
-  const item = spaImages?.find((g) => g?.id === lightbox);
-
   return (
     <section className="section-padding bg-secondary moroccan-pattern">
       <div className="max-w-screen-2xl mx-auto px-6 lg:px-8 xl:px-10">
@@ -49,53 +45,7 @@ export default function SpaGallery() {
             Découvrez nos espaces de bien-être en images.
           </p>
         </div>
-        <div className="columns-2 md:columns-3 gap-4">
-          {spaImages?.map((img) =>
-          <div
-            key={img?.id}
-            className="gallery-item break-inside-avoid mb-4"
-            style={{ minHeight: img?.tall ? '320px' : '200px' }}
-            onClick={() => setLightbox(img?.id)}
-            role="button"
-            tabIndex={0}
-            aria-label={`Voir en plein écran: ${img?.alt}`}
-            onKeyDown={(e) => e?.key === 'Enter' && setLightbox(img?.id)}>
-            
-              <div className={`relative w-full ${img?.tall ? 'aspect-[3/4]' : 'aspect-[4/3]'}`}>
-                <AppImage
-                src={img?.src}
-                alt={img?.alt}
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                className="object-cover"
-                unoptimized />
-              
-              </div>
-            </div>
-          )}
-        </div>
+        <PhotoGrid photos={spaImages.map((g) => ({ src: g.src, alt: g.alt }))} label="Galerie Spa" />
       </div>
-
-      {lightbox && item &&
-      <div
-        className="fixed inset-0 bg-foreground/95 z-50 flex items-center justify-center p-4 animate-fade-in"
-        onClick={() => setLightbox(null)}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Galerie spa plein écran">
-        
-          <button
-          className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
-          onClick={() => setLightbox(null)}
-          aria-label="Fermer">
-          
-            <X size={20} />
-          </button>
-          <div className="relative max-w-4xl w-full h-[80vh]" onClick={(e) => e?.stopPropagation()}>
-            <AppImage src={item?.src} alt={item?.alt} fill sizes="90vw" className="object-contain" unoptimized />
-          </div>
-        </div>
-      }
     </section>);
-
 }

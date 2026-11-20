@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Presentation, ImageIcon } from 'lucide-react';
+import PhotoGrid from '@/components/PhotoGrid';
 import { MEETING_ROOM, WHATSAPP_URL } from '@/lib/config';
 
 export default function MeetingRoomSection() {
@@ -18,13 +19,8 @@ export default function MeetingRoomSection() {
         </div>
 
         {photos.length > 0 ? (
-          <div className="columns-2 md:columns-3 gap-4 mb-10 [&>*]:mb-4">
-            {photos.map((ph, i) => (
-              <div key={`${ph.src}-${i}`} className="break-inside-avoid rounded-2xl overflow-hidden bg-card">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={ph.src} alt={ph.alt} width={ph.width} height={ph.height} loading="lazy" decoding="async" className="w-full h-auto block" />
-              </div>
-            ))}
+          <div className="mb-10">
+            <PhotoGrid photos={photos.map((ph) => ({ src: ph.src, alt: ph.alt }))} label="Salle de réunion" />
           </div>
         ) : (
           <div className="relative aspect-[16/7] rounded-2xl border-2 border-dashed border-accent/40 bg-card flex flex-col items-center justify-center text-center p-8 mb-10">
