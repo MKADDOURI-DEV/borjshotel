@@ -13,7 +13,6 @@ import GalleryPreview from '@/app/components/GalleryPreview';
 import LocationSection from '@/app/components/LocationSection';
 import ServicesGrid from '@/app/components/ServicesGrid';
 import ParkingSection from '@/app/components/ParkingSection';
-import MeetingRoomSection from '@/app/components/MeetingRoomSection';
 
 export default function HomePage() {
   return (
@@ -28,7 +27,6 @@ export default function HomePage() {
         <RestaurantTeaser />
         <ServicesGrid />
         <ParkingSection />
-        <MeetingRoomSection />
         <WhyChoose />
         <GalleryPreview />
         <LocationSection />

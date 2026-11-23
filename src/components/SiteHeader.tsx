@@ -11,6 +11,7 @@ const navLinks = [
   { key: 'nav-chambres', label: { fr: 'Chambres & Suites', en: 'Rooms & Suites', ar: 'الغرف والأجنحة' }, href: '/chambres-suites' },
   { key: 'nav-restaurant', label: { fr: 'Restaurant', en: 'Restaurant', ar: 'المطعم' }, href: '/restaurant' },
   { key: 'nav-spa', label: { fr: 'Spa & Bien-être', en: 'Spa & Wellness', ar: 'السبا والعافية' }, href: '/spa-bien-tre' },
+  { key: 'nav-reunion', label: { fr: 'Salle de réunion', en: 'Meeting Room', ar: 'قاعة الاجتماعات' }, href: '/salle-de-reunion' },
   { key: 'nav-contact', label: { fr: 'Contact', en: 'Contact', ar: 'اتصل بنا' }, href: '/contact' },
 ];
 

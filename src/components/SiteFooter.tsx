@@ -37,6 +37,7 @@ const footerLinks = [
   { key: 'footer-chambres', label: 'Chambres & Suites', href: '/chambres-suites' },
   { key: 'footer-restaurant', label: 'Restaurant', href: '/restaurant' },
   { key: 'footer-spa', label: 'Spa & Bien-être', href: '/spa-bien-tre' },
+  { key: 'footer-reunion', label: 'Salle de réunion', href: '/salle-de-reunion' },
   { key: 'footer-contact', label: 'Contact', href: '/contact' },
 ];
 

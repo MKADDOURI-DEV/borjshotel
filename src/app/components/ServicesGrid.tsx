@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Wifi, Clock, ShoppingBag, Car, UtensilsCrossed, Wine, Sparkles, Waves, Coffee, ParkingCircle, Presentation, Wind, Tv, Lock, Home } from 'lucide-react';
 
 const services = [
@@ -11,7 +12,7 @@ const services = [
   { key: 'svc-spa', icon: Sparkles, title: 'Spa & Hammam', desc: 'Soins traditionnels marocains' },
   { key: 'svc-pool', icon: Waves, title: 'Piscine', desc: 'Piscine extérieure avec transats' },
   { key: 'svc-parking', icon: ParkingCircle, title: 'Parking', desc: 'Extérieur et en sous-sol' },
-  { key: 'svc-meeting', icon: Presentation, title: 'Salle de réunion', desc: 'Espace professionnel' },
+  { key: 'svc-meeting', icon: Presentation, title: 'Salle de réunion', desc: 'Espace professionnel', href: '/salle-de-reunion' },
   { key: 'svc-ac', icon: Wind, title: 'Climatisation', desc: 'Contrôle individuel en chambre' },
   { key: 'svc-tv', icon: Tv, title: 'TV satellite', desc: 'Chaînes internationales' },
   { key: 'svc-minibar', icon: Coffee, title: 'Minibar', desc: 'Rafraîchissements en chambre' },
@@ -33,15 +34,23 @@ export default function ServicesGrid() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-4">
-          {services?.map((svc) => (
-            <div key={svc?.key} className="service-card p-5 rounded-xl border border-border bg-card hover:border-accent/40 hover:shadow-card transition-all duration-200 cursor-default">
-              <div className="service-icon-wrap mb-4">
-                <svc.icon size={22} className="text-primary transition-colors" />
-              </div>
-              <h3 className="font-semibold text-foreground text-sm mb-1">{svc?.title}</h3>
-              <p className="text-muted-foreground text-xs leading-relaxed">{svc?.desc}</p>
-            </div>
-          ))}
+          {services?.map((svc) => {
+            const card = (
+              <>
+                <div className="service-icon-wrap mb-4">
+                  <svc.icon size={22} className="text-primary transition-colors" />
+                </div>
+                <h3 className="font-semibold text-foreground text-sm mb-1">{svc?.title}</h3>
+                <p className="text-muted-foreground text-xs leading-relaxed">{svc?.desc}</p>
+              </>
+            );
+            const cls = "service-card p-5 rounded-xl border border-border bg-card hover:border-accent/40 hover:shadow-card transition-all duration-200";
+            return 'href' in svc && svc.href ? (
+              <Link key={svc.key} href={svc.href} className={`${cls} block`}>{card}</Link>
+            ) : (
+              <div key={svc?.key} className={`${cls} cursor-default`}>{card}</div>
+            );
+          })}
         </div>
       </div>
     </section>

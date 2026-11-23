@@ -12,7 +12,7 @@ export default function MeetingRoomSection() {
         <div className="text-center mb-12">
           <div className="gold-divider mx-auto mb-6" />
           <p className="text-accent text-sm font-semibold tracking-widest uppercase mb-3">Séminaires & événements</p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Salle de réunion</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">Notre salle en images</h2>
           <p className="text-muted-foreground text-base max-w-2xl mx-auto">
             Un espace professionnel et élégant pour vos réunions, séminaires et rencontres d&apos;affaires.
           </p>
