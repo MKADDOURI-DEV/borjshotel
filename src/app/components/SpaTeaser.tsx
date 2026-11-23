@@ -6,8 +6,8 @@ export default function SpaTeaser() {
   return (
     <section className="relative h-[600px] lg:h-[700px] overflow-hidden" aria-label="Spa et bien-être">
       <AppImage
-        src="/assets/images/spa/dsc1404.jpg"
-        alt="Espace spa luxueux avec hammam traditionnel marocain, bougies et ambiance zen"
+        src="/assets/images/spa/dsc1399.jpg"
+        alt="Salle de massage du spa aux alcôves marocaines éclairées de bougies"
         fill
         sizes="100vw"
         className="object-cover"

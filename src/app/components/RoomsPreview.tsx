@@ -36,7 +36,7 @@ const rooms = [
   occupancy: 'Single : 1 pers. · Double : 2 pers.',
   bed: 'Single ou double',
   description: 'Le caractère exclusif de la tradition marocaine, vue mer.',
-  image: "/assets/images/rooms/dsc1422.jpg",
+  image: "/assets/images/rooms/dsc1453.jpg",
   alt: 'Suite Prestige Vue Mer – Borj Hôtel Agadir',
   badge: 'Prestige',
   view: 'Vue sur la mer'

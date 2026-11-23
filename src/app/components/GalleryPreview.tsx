@@ -5,11 +5,11 @@ import { X, ZoomIn } from 'lucide-react';
 
 const galleryItems = [
 { id: 'gallery-1', src: "/assets/images/pool/dsc1491.jpg", alt: 'Piscine extérieure courbée de l\'hôtel Borjs avec palmiers et ciel bleu', category: 'Piscine', tall: true },
-{ id: 'gallery-2', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Chambre élégante avec lit king-size et décoration marocaine raffinée', category: 'Chambres', tall: false },
+{ id: 'gallery-2', src: "/assets/images/rooms/dsc1453.jpg", alt: 'Salon lumineux avec vue sur la mer', category: 'Chambres', tall: false },
 { id: 'gallery-3', src: "/assets/images/spa/dsc1399.jpg", alt: 'Espace spa avec hammam traditionnel marocain et ambiance zen', category: 'Spa', tall: false },
 { id: 'gallery-4', src: "/assets/images/restaurant/dsc1473.jpg", alt: 'Restaurant élégant avec tables dressées et décoration marocaine', category: 'Restaurant', tall: false },
 { id: 'gallery-5', src: "/assets/images/rooms/dsc1435.jpg", alt: 'Suite luxueuse avec salon séparé et vue sur la piscine', category: 'Suites', tall: true },
-{ id: 'gallery-6', src: "/assets/images/hotel/dsc1494.jpg", alt: 'Façade blanche de l\'hôtel Borjs entourée de palmiers tropicaux', category: 'Hôtel', tall: false }];
+{ id: 'gallery-6', src: "/assets/images/hotel/dsc1503.jpg", alt: 'Terrasses de l\'hôtel Borjs entourées de palmiers et de verdure', category: 'Hôtel', tall: false }];
 
 
 export default function GalleryPreview() {

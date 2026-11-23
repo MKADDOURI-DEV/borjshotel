@@ -44,8 +44,8 @@ export default function WhyChoose() {
           {/* Image */}
           <div className="image-reveal rounded-2xl overflow-hidden aspect-[4/5]">
             <AppImage
-              src="/assets/images/hotel/dsc1494.jpg"
-              alt="Vue extérieure de l'hôtel Borjs avec architecture marocaine blanche, palmiers et ciel bleu d'Agadir"
+              src="/assets/images/hotel/dsc1503.jpg"
+              alt="Terrasses de l'hôtel Borjs entourées de palmiers et de verdure à Agadir"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

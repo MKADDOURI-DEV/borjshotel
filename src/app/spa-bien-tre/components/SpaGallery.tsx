@@ -7,7 +7,6 @@ const spaImages = [
 { id: 'spa-g-2', src: "/assets/images/spa/dsc1399.jpg", alt: 'Cabine de massage avec lumière tamisée et niches', tall: false },
 { id: 'spa-g-3', src: "/assets/images/spa/dsc1408.jpg", alt: 'Entrée du hammam', tall: false },
 { id: 'spa-g-4', src: "/assets/images/spa/dsc1386.jpg", alt: 'Vasque du hammam en zellige', tall: false },
-{ id: 'spa-g-5', src: "/assets/images/spa/dsc1404.jpg", alt: 'Salle de massage double avec niches en tadelakt', tall: true },
 { id: 'spa-g-7', src: "/assets/images/spa/dsc1385.jpg", alt: 'Salle de hammam avec accès en arche', tall: false },
 { id: 'spa-g-9', src: "/assets/images/spa/dsc1392.jpg", alt: 'Plateau de soins et produits naturels du hammam', tall: false },
 { id: 'spa-g-10', src: "/assets/images/spa/dsc1400.jpg", alt: 'Cabine de massage avec plafond en bois', tall: true },

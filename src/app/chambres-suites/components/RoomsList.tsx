@@ -54,18 +54,16 @@ const rooms = [
   description: 'Notre Suite Prestige est le joyau de l\'hôtel. Salon lumineux, boiseries et détails inspirés de l\'artisanat marocain, finitions soignées et vue sur la mer : chaque espace célèbre l\'élégance de la tradition marocaine, associée à un confort moderne exclusif. Disponible en occupation single ou double.',
   images:
   [
-  { id: 'pre-img-1', src: "/assets/images/rooms/dsc1422.jpg", alt: 'Suite Prestige Vue Mer – photo 1' },
-  { id: 'pre-img-2', src: "/assets/images/rooms/dsc1423.jpg", alt: 'Suite Prestige Vue Mer – photo 2' },
+  { id: 'pre-img-1', src: "/assets/images/rooms/dsc1453.jpg", alt: 'Suite Prestige Vue Mer – photo 1' },
+  { id: 'pre-img-2', src: "/assets/images/rooms/dsc1449.jpg", alt: 'Suite Prestige Vue Mer – photo 2' },
   { id: 'pre-img-3', src: "/assets/images/rooms/dsc1424.jpg", alt: 'Suite Prestige Vue Mer – photo 3' },
   { id: 'pre-img-4', src: "/assets/images/rooms/dsc1425.jpg", alt: 'Suite Prestige Vue Mer – photo 4' },
-  { id: 'pre-img-5', src: "/assets/images/rooms/dsc1453.jpg", alt: 'Suite Prestige Vue Mer – photo 5' },
-  { id: 'pre-img-6', src: "/assets/images/rooms/dsc1449.jpg", alt: 'Suite Prestige Vue Mer – photo 6' },
-  { id: 'pre-img-7', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Prestige Vue Mer – photo 7' },
-  { id: 'pre-img-8', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Prestige Vue Mer – photo 8' },
-  { id: 'pre-img-9', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Prestige Vue Mer – photo 9' },
-  { id: 'pre-img-10', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Prestige Vue Mer – photo 10' },
-  { id: 'pre-img-11', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Prestige Vue Mer – photo 11' },
-  { id: 'pre-img-12', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Prestige Vue Mer – photo 12' }],
+  { id: 'pre-img-5', src: "/assets/images/rooms/dsc1431.jpg", alt: 'Suite Prestige Vue Mer – photo 5' },
+  { id: 'pre-img-6', src: "/assets/images/rooms/dsc1432.jpg", alt: 'Suite Prestige Vue Mer – photo 6' },
+  { id: 'pre-img-7', src: "/assets/images/rooms/dsc1433.jpg", alt: 'Suite Prestige Vue Mer – photo 7' },
+  { id: 'pre-img-8', src: "/assets/images/rooms/dsc1428.jpg", alt: 'Suite Prestige Vue Mer – photo 8' },
+  { id: 'pre-img-9', src: "/assets/images/rooms/dsc1429.jpg", alt: 'Suite Prestige Vue Mer – photo 9' },
+  { id: 'pre-img-10', src: "/assets/images/rooms/dsc1430.jpg", alt: 'Suite Prestige Vue Mer – photo 10' }],
   amenities: baseAmenities
 },
 {
